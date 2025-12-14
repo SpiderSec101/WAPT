@@ -48,6 +48,7 @@
 - [ ] Active Subdomain Bruteforcing
   - Dnsenum
   - Sublist3r
+  - OneForAll
 - [ ] Live Hosts
   - httprobe
   - httpx
