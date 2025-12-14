@@ -99,6 +99,10 @@
 - [ ] ffuf
 - [ ] feroxbuster
 - [ ] wfuzz
+## Wordlists
+- [ ] Assetnote Wordlists
+- [ ] SecLists
+- [ ] Payloadallthethings Intruder 
 ## URLs / Endpoints
 - [ ] JS Analysis
   - Linkfinder
