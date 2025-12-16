@@ -168,11 +168,7 @@
      - S3 Buckets
      - Image Uploads / Comments / Profile details
 - [ ] How the framework handles or protect itself from different vulns
-## Wordlists
-- [ ] Seclists
-- [ ] Payloadallthethings
-- [ ] Assetnotes
-- [ ] Custom (cewl)
+
 ## Modules and Sub-Modules
 - [ ] Find Directories and Sub-Directories
 - [ ] Authentication
