@@ -183,6 +183,7 @@
 - [ ] HTTP Headers
 - [ ] HTTP Methods
 - [ ] Backup Files / Source Code
+- [ ] Low Hanging Fruits
 ---
 ## Authentication
 - [ ] Weak Credentials
