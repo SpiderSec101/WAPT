@@ -268,9 +268,22 @@
   - phpinfo
   - cookie with long path
 
-
-
-
+## Low Hanging Fruits
+- [ ] Weak Credentials
+- [ ] Ratelimiting
+- [ ] Account Locking
+- [ ] Hardcoded Credentials in Source Code
+- [ ] Username Enumeration
+- [ ] No SQL Injection
+- [ ] Weak Password Hash Algorithm 
+- [ ] Weak Password Policy
+- [ ] Whether MFA enabled
+- [ ] Updating password to the existing password
+- [ ] Missing Security Headers
+- [ ] SSL / TLS issues
+- [ ] Application Specific Flaws
+  - Example: Banking Application
+    - [ ] Account number is totally visible
 
 
 
