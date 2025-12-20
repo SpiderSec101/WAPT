@@ -280,6 +280,7 @@
 - [ ] Whether MFA enabled
 - [ ] Updating password to the existing password
 - [ ] Missing Security Headers
+- [ ] Vulnerable Libraries
 - [ ] SSL / TLS issues
 - [ ] Application Specific Flaws
   - Example: Banking Application
