@@ -172,6 +172,7 @@
 
 ## Modules and Sub-Modules
 - [ ] Find Directories and Sub-Directories
+- [ ] Source Code and JS Files 
 - [ ] Authentication
   - Token Basis
   - Session Basis
@@ -179,11 +180,12 @@
 - [ ] User Input Fields
 - [ ] File Uploads
 - [ ] Chat-Bots
+- [ ] Forms
 - [ ] Debugging Page / Console
 - [ ] APIs
 - [ ] HTTP Headers
 - [ ] HTTP Methods
-- [ ] Backup Files / Source Code
+- [ ] Backup Files
 - [ ] Low Hanging Fruits
 ---
 ## Authentication
