@@ -186,6 +186,11 @@
 - [ ] HTTP Headers
 - [ ] HTTP Methods
 - [ ] Backup Files
+- [ ] Cache Security
+- [ ] HTTP Request Smuggling
+- [ ] Business Logic Flaws
+- [ ] SSO / OAuth
+- [ ] Race Condition
 - [ ] Low Hanging Fruits
 ---
 ## Authentication
