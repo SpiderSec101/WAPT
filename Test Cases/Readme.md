@@ -6,12 +6,13 @@
 - [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
 - [Meta Files](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#meta-files)
 - [Directory Bruteforcing](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#bruteforcing-directories--parameters)
+- [Wordlists](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#wordlists)
 - [URls and Endpoints](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#urls--endpoints)
 - [Open Ports](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#open-ports)
 - [Automated Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#automated-analysis)
 - [Manual Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#manual-analysis)
 - [Questions](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#questions)
-- [Wordlists](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#wordlists)
+- [Testing](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#testing)
 - [Authentication](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#authentication)
 - [SQL Injection](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#sql-injection)
 - [XSS](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#xss)
@@ -170,13 +171,15 @@
      - Image Uploads / Comments / Profile details
 - [ ] How the framework handles or protect itself from different vulns
 
-## Modules and Sub-Modules
-- [ ] Find Directories and Sub-Directories
+## Testing 
 - [ ] Source Code and JS Files 
 - [ ] Authentication
   - Token Basis
   - Session Basis
 - [ ] Authorization
+- [ ] Fuzzing Dynamic Requests
+- [ ] Testing Parameters
+- [ ] Listing Modules and Sub-Modules 
 - [ ] User Input Fields
 - [ ] File Uploads
 - [ ] Chat-Bots
@@ -186,6 +189,7 @@
 - [ ] HTTP Headers
 - [ ] HTTP Methods
 - [ ] Backup Files
+- [ ] Directories and Sub-Directories
 - [ ] Cache Security
 - [ ] HTTP Request Smuggling
 - [ ] Business Logic Flaws
