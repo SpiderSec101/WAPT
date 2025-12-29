@@ -176,7 +176,9 @@
 - [ ] Authentication
   - Token Basis
   - Session Basis
-- [ ] Authorization
+- [ ] Authorization (IDOR, Privilege Escalation)
+- [ ] Manual Crawl
+- [ ] Creating Sitemap
 - [ ] Fuzzing Dynamic Requests
 - [ ] Testing Parameters
 - [ ] Listing Modules and Sub-Modules 
