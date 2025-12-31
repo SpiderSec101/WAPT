@@ -283,22 +283,40 @@
   - cookie with long path
 
 ## Low Hanging Fruits
-- [ ] Weak Credentials
-- [ ] Ratelimiting
-- [ ] Account Locking
+- [ ] Weak or Bydefault Credentials
+- [ ] Lac of Ratelimiting
+- [ ] Ratelimiting Bypasses
+- [ ] No Account Locking
 - [ ] Hardcoded Credentials in Source Code
 - [ ] Username Enumeration
-- [ ] No SQL Injection
+- [ ] Weak Cryptogaphy Implemented in Authentication
 - [ ] Weak Password Hash Algorithm 
 - [ ] Weak Password Policy
 - [ ] Whether MFA enabled
 - [ ] Updating password to the existing password
 - [ ] Missing Security Headers
+- [ ] Weakly configured security headers
 - [ ] Vulnerable Libraries
 - [ ] SSL / TLS issues
+- [ ] HTTPs not enabed
+- [ ] HTTPs not enforced
+- [ ] Transmitting specific data in plain text
+- [ ] Server Banner Information Disclosed
+- [ ] Unnecessarily exposed features
+- [ ] Misconfiguration in mailing systems
+- [ ] Application sends information to 3rd party domains
+- [ ] Bypassing client side user input validation
+- [ ] Forgot password features
+- [ ] Sensitive metadata in downloadable files
+- [ ] Session valid after logging out
+- [ ] No logout functionality
+- [ ] Session token present in URL
+- [ ] Exposing API keys in client side code
+- [ ] Buffer Overflow
+- [ ] No user input limit
+- [ ] Client side DoS attacks
+- [ ] APK application exposes API keys and endpoints
 - [ ] Application Specific Flaws
-  - Example: Banking Application
-    - [ ] Account number is totally visible
 
 
 
