@@ -213,8 +213,6 @@
 - [ ] JWT Manipulation
 - [ ] SQL Injection
 - [ ] No SQL Injection
-- [ ] Stored Password Hash
-- [ ] Strong Password Policy
 - [ ] OAuth
 - [ ] SSO
 - [ ] MFA
@@ -229,7 +227,7 @@
   - Union Based
   - Stacked Queries
   - Concatenation
-- [ ] Blind SQL Inection
+- [ ] Blind SQL Injection
   - Boolean Based
   - Time Based
 - [ ] Out of Band SQL Injection
@@ -246,7 +244,7 @@
   - Self XSS
   - Blind XSS
 - [ ] Try HTML Injection
-- [ ] Blocked Characters
+- [ ] Find Blocked Characters
 - [ ] Allowed Tags
 - [ ] Allowed Eventhandlers
 - [ ] Context
@@ -272,7 +270,7 @@
   - Cookie Stealing
   - Autofillup Password
   - Stored XSS to CSRF
-  - CORS Bypass
+  - CORS Bypasses
   - Dangling Markup Injection
 - [ ] HttpOnly
   - localstorage
@@ -280,40 +278,47 @@
   - cookie with long path
 
 ## Low Hanging Fruits
-- [ ] Weak or Bydefault Credentials
-- [ ] Lac of Ratelimiting
-- [ ] Ratelimiting Bypasses
-- [ ] No Account Locking
-- [ ] Hardcoded Credentials in Source Code
-- [ ] Username Enumeration
-- [ ] Weak Cryptogaphy Implemented in Authentication
-- [ ] Weak Password Hash Algorithm 
-- [ ] Weak Password Policy
-- [ ] Whether MFA enabled
-- [ ] Updating password to the existing password
-- [ ] Missing Security Headers
-- [ ] Weakly configured security headers
+- [ ] Authentication 
+  - Weak credentials
+  - By-default credentials
+  - Lac of Ratelimiting
+  - Ratelimiting Bypasses
+  - No Account Locking
+  - Hardcoded Credentials in Source Code
+  - Username Enumeration
+  - Weak Cryptogaphy Implemented in Authentication
+  - Weak Password Hash Algorithm
+  - Weak Password Policy
+  - Whether MFA enabled
+  - Forgot password features
+  - Change password to the existing password
+- [ ] HTTP Headers
+  - Missing Security Headers
+  - Weakly configured security headers
+- [ ] HTTPs
+  - SSL / TLS issues
+  - HTTPs not enabed
+  - HTTPs not enforced
+- [ ] Sesion
+  - Session valid after logging out
+  - No logout functionality
+  - Session token present in URL
+  - Session ID can be predicted
+  - Session Fixation
 - [ ] Vulnerable Libraries
-- [ ] SSL / TLS issues
-- [ ] HTTPs not enabed
-- [ ] HTTPs not enforced
 - [ ] Transmitting specific data in plain text
 - [ ] Server Banner Information Disclosed
 - [ ] Unnecessarily exposed features
 - [ ] Misconfiguration in mailing systems
 - [ ] Application sends information to 3rd party domains
 - [ ] Bypassing client side user input validation
-- [ ] Forgot password features
 - [ ] Sensitive metadata in downloadable files
-- [ ] Session valid after logging out
-- [ ] No logout functionality
-- [ ] Session token present in URL
 - [ ] Exposing API keys in client side code
-- [ ] Buffer Overflow
+- [ ] Overflows
 - [ ] No user input limit
 - [ ] Client side DoS attacks
 - [ ] APK application exposes API keys and endpoints
-- [ ] Application Specific Flaws
+- [ ] Business or Company Specific Flaws
 
 
 
