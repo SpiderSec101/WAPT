@@ -172,16 +172,13 @@
 - [ ] How the framework handles or protect itself from different vulns
 
 ## Testing 
-- [ ] Source Code and JS Files 
+- [ ] Source Code and JS Files Analysis
+- [ ] Listing Modules and Sub-Modules  
 - [ ] Authentication
   - Token Basis
   - Session Basis
 - [ ] Authorization (IDOR, Privilege Escalation)
-- [ ] Manual Crawl
-- [ ] Creating Sitemap
-- [ ] Fuzzing Dynamic Requests
 - [ ] Testing Parameters
-- [ ] Listing Modules and Sub-Modules 
 - [ ] User Input Fields
 - [ ] File Uploads
 - [ ] Chat-Bots
