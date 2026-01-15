@@ -296,7 +296,7 @@
   - Missing Security Headers
   - Weakly configured security headers
 - [ ] HTTPs
-  - SSL / TLS issues
+  - SSL / TLS issues (https://github.com/testssl/testssl.sh)
   - HTTPs not enabed
   - HTTPs not enforced
 - [ ] Sesion
