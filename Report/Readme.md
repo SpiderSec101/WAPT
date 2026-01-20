@@ -1,4 +1,4 @@
-### General points to remember while writing reports 
+# General points to remember while writing reports 
 
 - Application Name 
 - Environment: UAT / PROD / QA
@@ -22,10 +22,10 @@
 - User Roles: 
 	-- Example
 	The following user accounts are provided for the assessment
-	# Super User 
+  	- [ ] Super User 
 	1. Admin1/admin1@company.com 
 	2. Admin2/admin2@company.com
-	# Normal User
+	- [ ] Normal User
 	1. Test1/test1@company.com 
 	2. Test2/test2@company.com
 
@@ -68,8 +68,8 @@
 	-- Two parahs
 	-- 1st parah: The technical definition of the finding  
 	-- 2nd parah: During the assessment
-		|- Where and How the vulnerability occurs
-		|- User role used to exploit it 
+		- [ ] Where and How the vulnerability occurs
+		- [ ] User role used to exploit it 
 
 - Affected URLs:
 	-- Full URL path
@@ -87,24 +87,24 @@
 	-- Mentioned steps should be exact and explicit
 	-- Uses clear screenshots
 	-- If Burp tools are involved, explicitly mention the tools used
-		|- Proxy
-		|- Repeater
-		|- Intruder
+		- [ ] Proxy
+		- [ ] Repeater
+		- [ ] Intruder
 	-- For modified requests mention
-		|- You have send the request into the repeater
-		|- Modified any partcular header or any parameter value
-		|- The reason of modification
+		- [ ] You have send the request into the repeater
+		- [ ] Modified any partcular header or any parameter value
+		- [ ] The reason of modification
 	-- The observations should be clearly metioned after sending a modified request to the application.
 
 	-- When authentication is required the following format can be used
-		|- Log in toi the applicaiton using the credentials of the User-Role / Username account
-		|- Admin / Jeremy
-		|- Normal User / Spider
+		- [ ] Log in toi the applicaiton using the credentials of the User-Role / Username account
+		- [ ] Admin / Jeremy
+		- [ ] Normal User / Spider
 	-- When UI Based workflows are required
-		|- EG: Navigate to the 'Admin Panel -> Add User' functionality using the browser.
-		|- Clearly distuinguish between UI based and Direct URL based access 
+		- [ ] EG: Navigate to the 'Admin Panel -> Add User' functionality using the browser.
+		- [ ] Clearly distuinguish between UI based and Direct URL based access 
 	-- When the URL Based workflow is required
-		|- EG: Navigate to the following URL in the browser.
+		- [ ] EG: Navigate to the following URL in the browser.
 
 
 
