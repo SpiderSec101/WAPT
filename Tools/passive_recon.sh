@@ -58,6 +58,25 @@ echo "Current Working Directory => ${pwd}"
 shodan_api_key=$(cat ../config.ini | grep 'shodan' | grep -Po '"(.+)"' | tr -d '"')
 github_api_key=$(cat ../config.ini | grep 'spyse' | grep -Po '"(.+)"' | tr -d '"')
 read -p "Enter the wordlist location for subdomain bruteforcing : " sub_wordlist
+#~~~~~~~~~~~ Listing all the tools ~~~~~~~~~~~~~~
+echo "[*] Gdorklink.sh"
+echo "[*] crunchbase.com"
+echo "[*] bgp.he.net"
+echo "[*] amass intel"
+echo "[*] crt.sh"
+echo "[*] Shosubgo"
+echo "[*] kaeferjaeger.gay"
+echo "[*] Karma_V2"
+echo "[*] github-subdomains"
+echo "[*] amass enum"
+echo "[*] Subfinder"
+echo "[*] BBOT"
+echo "[*] puredns"
+echo "[*] shuffledns"
+echo "[*] httpx"
+echo "[*] dnsgen"
+echo "[*] dnsrecon"
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Information Gathering (Passive) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~~~~~~~~~~~~~~ Gdorklink.sh ~~~~~~~~~~~~~~~
 
