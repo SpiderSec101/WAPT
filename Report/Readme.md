@@ -21,28 +21,28 @@
 
 - User Roles: 
 	- Example: The following user accounts are provided for the assessment
-  	- [ ] Super User 
-		1. Admin1/admin1@company.com 
-		2. Admin2/admin2@company.com
-	- [ ] Normal User
-		1. Test1/test1@company.com 
-		2. Test2/test2@company.com
+	  	- [ ] Super User 
+			1. Admin1/admin1@company.com 
+			2. Admin2/admin2@company.com
+		- [ ] Normal User
+			1. Test1/test1@company.com 
+			2. Test2/test2@company.com
 
 - Scope:
 	- Example
-  	- [ ] In-Scope:
-		- URLs:
-			1. url1
-			2. url2
-		- Functionalities
-			1. Register / Login
-			2. Admin Panel 
-			3. File Upload
-	- [ ] Out-of-Scope
-		- URLs:
-			1. url1
-			2. url2
- 		- Functionalities
+	  	- [ ] In-Scope:
+			- URLs:
+				1. url1
+				2. url2
+			- Functionalities
+				1. Register / Login
+				2. Admin Panel 
+				3. File Upload
+		- [ ] Out-of-Scope
+			- URLs:
+				1. url1
+				2. url2
+	 		- Functionalities
 
 - Strength: 
 	- About the strength of the applicaiton
