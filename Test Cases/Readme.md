@@ -321,7 +321,27 @@
 - [ ] Business or Company Specific Flaws
 
 
-
+## File Upload
+- [ ] Allowed Extensions
+- [ ] Extension Whitelist Bypasses
+- [ ] Content-Type
+- [ ] File Signatures
+- [ ] Payload in between data chunks
+- [ ] Polygot files
+- [ ] Shell upload via path traversal
+- [ ] Editing configuration files
+- [ ] Uploading zip files
+  - Symlink
+  - Decompressed in different files
+- [ ] File upload to XSS
+- [ ] File upload to XXE
+- [ ] DoS
+  - XXE Million Laugh Attack
+  - Decompression Bomb
+  - Pixel Flood Attack
+- [ ] No file size limit
+- [ ] No rate limiting
+- [ ] No limit of the number of uploaded files
 
 
 
