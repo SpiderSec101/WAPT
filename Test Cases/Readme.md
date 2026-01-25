@@ -17,7 +17,8 @@
 - [SQL Injection](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#sql-injection)
 - [XSS](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#xss)
 - [Low Hanging Fruits](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#low-hanging-fruits)
-
+- [File Uploads](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#file-uploads)
+- [XXE](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#xxe)
 
 
 
@@ -321,7 +322,7 @@
 - [ ] Business or Company Specific Flaws
 
 
-## File Upload
+## File Uploads
 - [ ] Allowed Extensions
 - [ ] Extension Whitelist Bypasses
 - [ ] Content-Type
@@ -344,7 +345,20 @@
 - [ ] No limit of the number of uploaded files
 
 
-
+## XXE 
+- [ ] JSON to XML convertion
+- [ ] LFI
+- [ ] Error Based Attacks
+- [ ] Blind XXE
+- [ ] Using Local DTD and Remote DTD
+- [ ] Parameter Entities
+- [ ] XXE via SVG file upload
+- [ ] SSRF using XXE
+- [ ] Dos
+  - Billion Laugh Attack
+  - YAML Bomb
+  - Parameter Laugh Attack
+- [ ] XInclude
 
 
 
