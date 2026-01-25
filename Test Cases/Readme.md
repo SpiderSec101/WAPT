@@ -245,9 +245,6 @@
   - Self XSS
   - Blind XSS
 - [ ] Try HTML Injection
-- [ ] Find Blocked Characters
-- [ ] Allowed Tags
-- [ ] Allowed Eventhandlers
 - [ ] Context
   - HTML
   - URL
@@ -255,7 +252,38 @@
   - Script
 - [ ] Check Fragments `location.hash`
 - [ ] Filter Bypasses
+  - Whether the payload is HTML encoded
+  - Look for allowed tags and evenlisteners
+  - Without event handlers
+    ```
+    <script src=”javascript:alert(1)”></script>
+    <iframe src=…></iframe>
+    <a href=...>
+    ```
+  - Custom Tags
+  - Filter's Rules : Which characters are blocked
+  - Case Sensitive
+  - Using Regex for filters ? : Try double occurance
+  - Is it stripping ? : `<scr<script>ipt>`
 - [ ] CSP Bypasses
+  - CSP Evaluator [`https://csp-evaluator.withgoogle.com/`](https://csp-evaluator.withgoogle.com/)
+  - unsafe inline
+  - unsafe eval
+      - CSP ⇒ Angular.js
+      - CSP ⇒ DOM XSS
+  - data:
+  - JSONP
+      - Callback end points
+      - www.youtube.com
+      - Any application using OAuth or SSO
+  - Third Party Domain
+      - *.google.com ⇒ google drive
+      - *.yandex.net
+      - www.google-analytics.com
+  - File Uploads
+      - file.js
+  - `default-src ‘self’`
+      - Redirecting the victim using `window.location`
 - [ ] Iframe Sandbox
 - [ ] XSS through File Uploads
   - SVG
@@ -273,7 +301,7 @@
   - Stored XSS to CSRF
   - CORS Bypasses
   - Dangling Markup Injection
-- [ ] HttpOnly
+- [ ] HttpOnly Bypasses
   - localstorage
   - phpinfo
   - cookie with long path
