@@ -376,11 +376,14 @@
 ## XXE 
 - [ ] JSON to XML convertion
 - [ ] LFI
-- [ ] Error Based Attacks
-- [ ] Blind XXE
-- [ ] Using Local DTD and Remote DTD
 - [ ] Parameter Entities
-- [ ] XXE via SVG file upload
+- [ ] Error Based Attacks
+  - `No Entities are allowed : Use Remote DTD`
+- [ ] Blind XXE
+  - Detection
+  - Error Based Exploits : `with or without Remote DTD`
+  - Out Of Band Exploits : `With or without Remote DTD`
+- [ ] XXE via SVG file uploads
 - [ ] SSRF using XXE
 - [ ] Dos
   - Billion Laugh Attack
