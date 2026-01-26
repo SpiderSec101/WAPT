@@ -173,7 +173,9 @@
 - [ ] How the framework handles or protect itself from different vulns
 
 ## Testing 
-- [ ] Source Code and JS Files Analysis
+- [ ] Source Code Analysis (SAST)
+  - metasec.js
+  - opengrep `https://github.com/opengrep/opengrep`
 - [ ] Listing Modules and Sub-Modules  
 - [ ] Authentication
   - Token Basis
