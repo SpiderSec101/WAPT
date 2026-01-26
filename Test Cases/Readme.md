@@ -209,7 +209,9 @@
   - Bypass via different HTTP Methods
   - Captcha encoded into HTML
 - [ ] Hardcoded Credentials
-- [ ] Forgot Password or Reset Password
+- [ ] Forgot Password
+  - Reset token can be guessed or not
+  - X-Forwarded-Host
 - [ ] User Name Enumeration
 - [ ] Session ID Prediction
 - [ ] Session Fixation
