@@ -246,6 +246,7 @@
 - [ ] Blind SQL Injection
   - Boolean Based
   - Time Based
+  - Concatenation
 - [ ] Out of Band SQL Injection
 - [ ] Second Order SQL Injection
 - [ ] Double Queries
