@@ -221,7 +221,7 @@
   - Captcha encoded into HTML
 - [ ] Hardcoded Credentials
 - [ ] Forgot Password
-  - Reset token can be guessed or not
+  - Guessing Reset Token
   - X-Forwarded-Host
 - [ ] User Name Enumeration
 - [ ] Session ID Prediction
