@@ -22,7 +22,7 @@
 
 
 
-## Asset Discovery (Subdomains, Apexdomains, IPv4, IPv6, Employee Details)
+## Asset Discovery (Subdomains, IPs, User Details, Parameters)
 - [ ] Acquitisions
   - crunchbase.com
 - [ ] ASN
@@ -69,7 +69,10 @@
   - theHarvester
 - [ ] Secrets and Emails 
   - Checking git commits using [trufflehog](https://github.com/trufflesecurity/trufflehog)
-  - Github Enumeration Tools 
+  - Github Enumeration Tools
+- [ ] Parameters Enumerations
+  - Arjun
+  - x8 
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
