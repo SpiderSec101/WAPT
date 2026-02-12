@@ -22,7 +22,7 @@
 
 
 
-## Asset Discovery (Subdomains, Apexdomains, IPv4, IPv6)
+## Asset Discovery (Subdomains, Apexdomains, IPv4, IPv6, Employee Details)
 - [ ] Acquitisions
   - crunchbase.com
 - [ ] ASN
@@ -65,6 +65,8 @@
   - html.sh (custom)
 - [ ] Favicon Analysis
   - favfreak.py
+- [ ] Employee Details
+  - theHarvester 
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
