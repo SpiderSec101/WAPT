@@ -137,9 +137,21 @@
 - [ ] feroxbuster
 - [ ] wfuzz
 ## Wordlists
-- [ ] Assetnote Wordlists
-- [ ] SecLists
-- [ ] Payloadallthethings Intruder 
+- [ ] Directory and Subdomains
+  - Assetnote Wordlists
+  - SecLists
+  - [fuzzDicts](tps://github.com/TheKingOfDuck/fuzzDicts)
+- [ ] Fuzzing
+  - Paloadallthethings Intruder
+  - SecLists
+- [ ] API Resources
+  - SecLists
+  - [api_wordlist](https://github.com/chrislockard/api_wordlist)
+  - [graphql_wordlist](https://github.com/Escape-Technologies/graphql-wordlist)
+  - [A List of  Common Endpoints and Objects](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d)
+- [ ] Parameters
+  - SecLists
+  - [fuzzDicts](tps://github.com/TheKingOfDuck/fuzzDicts)
 ## URLs / Endpoints
 - [ ] JS Analysis
   - Linkfinder
