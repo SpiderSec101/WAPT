@@ -161,6 +161,8 @@
 - [ ] masscan
 - [ ] dnmasscan
 ## Automated Analysis
+- [ ] Nikto
+- [ ] Wpscan
 - [ ] Nuclei
 - [ ] Retire.js
 - [ ] Jaeles
@@ -171,7 +173,7 @@
 - [ ] Using AI
   - [ ] strix (https://github.com/usestrix/strix)
   - [ ] hexstrike
-  - [ ] AI Auditor 
+  - [ ] AI Axtender
 ## Manual Analysis
 - [ ] CVEs
 - [ ] Passive Burp Scan
@@ -325,7 +327,8 @@
   - cookie with long path
 
 ## Low Hanging Fruits
-- [ ] Authentication 
+- [ ] Authentication
+  - Forced Browsing 
   - Weak credentials
   - By-default credentials
   - Lac of Ratelimiting
@@ -342,11 +345,13 @@
 - [ ] HTTP Headers
   - Missing Security Headers
   - Weakly configured security headers
-- [ ] HTTPs
+- [ ] HTTP and HTTPs 
   - SSL / TLS issues (https://github.com/testssl/testssl.sh)
   - HTTPs not enabed
   - HTTPs not enforced
-- [ ] Sesion
+  - HTTP/2 is not enforced 
+- [ ] Session
+  - Parallel Sessions Allowed 
   - Session valid after logging out
   - No logout functionality
   - Session token present in URL
@@ -355,7 +360,7 @@
 - [ ] Vulnerable Libraries
 - [ ] Transmitting specific data in plain text
 - [ ] Server Banner Information Disclosed
-- [ ] Unnecessarily exposed features
+- [ ] Unnecessarily exposed features and data 
 - [ ] Misconfiguration in mailing systems
 - [ ] Application sends information to 3rd party domains
 - [ ] Bypassing client side user input validation
