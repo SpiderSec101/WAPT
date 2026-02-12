@@ -240,6 +240,7 @@
 - [ ] Hardcoded Credentials
 - [ ] Forgot Password
   - Guessing Reset Token
+  - Host
   - X-Forwarded-Host
 - [ ] User Name Enumeration
 - [ ] Session ID Prediction
