@@ -66,7 +66,10 @@
 - [ ] Favicon Analysis
   - favfreak.py
 - [ ] Employee Details
-  - theHarvester 
+  - theHarvester
+- [ ] Secrets and Emails 
+  - Checking git commits using [trufflehog](https://github.com/trufflesecurity/trufflehog)
+  - Github Enumeration Tools 
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
@@ -143,7 +146,6 @@
   - SubDomainizer
   - Burp-GAP
   - JSMiner
-  - metasec.js
 - [ ] Crawlers
   - katana
   - go-spider
