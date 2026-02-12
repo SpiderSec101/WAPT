@@ -338,6 +338,7 @@
   - Autofillup Password
   - Stored XSS to CSRF
   - CORS Bypasses
+  - LFI
   - Dangling Markup Injection
 - [ ] HttpOnly Bypasses
   - localstorage
