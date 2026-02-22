@@ -95,10 +95,6 @@
 - [ ] fierce
 - [ ] host
 - [ ] whois
-## Port Scanning
-- [ ] naabu
-- [ ] nmap
-- [ ] rustscan
 ## Github Enumeration
   - git-history
   - github-dorks
