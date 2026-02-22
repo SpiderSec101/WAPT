@@ -26,7 +26,8 @@
 - [ ] Acquitisions
   - crunchbase.com
 - [ ] ASN
-  - bgp.he.net
+  - (BGP Toolkit)[https://bgp.he.net/]
+  - BGP View API
   - nmap
 - [ ] Extracting Domains from ASN
   - amass intel
