@@ -69,8 +69,6 @@
   - html.sh (custom)
 - [ ] Favicon Analysis
   - favfreak.py
-- [ ] Secrets (EG: API Keys, Credentials)
-  - Checking git commits using [trufflehog](https://github.com/trufflesecurity/trufflehog)
 - [ ] Parameters Enumerations
   - Arjun
   - x8
@@ -85,7 +83,8 @@
 - [ ] Credentials
   - github-dorks
   - Google Dorking
-  - trufflehog
+- [ ] Secrets (EG: API Keys, Credentials)
+  - Checking git commits using [trufflehog](https://github.com/trufflesecurity/trufflehog)
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
