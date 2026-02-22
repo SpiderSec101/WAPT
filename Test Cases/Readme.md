@@ -74,7 +74,11 @@
   - Checking git commits using [trufflehog](https://github.com/trufflesecurity/trufflehog)
 - [ ] Parameters Enumerations
   - Arjun
-  - x8 
+  - x8
+- [ ] TLDs
+  - Google Dorking
+  - Censys
+  - [Bultwith](https://builtwith.com/)
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
