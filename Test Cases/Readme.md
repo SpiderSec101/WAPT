@@ -1,6 +1,7 @@
 # Test Cases
 
 - [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-ips-user-details-parameters)
+- [User Info](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#user-info)
 - [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
 - [Github Enumeration](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#github-enumeration)
 - [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
