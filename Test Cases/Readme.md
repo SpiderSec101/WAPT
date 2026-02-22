@@ -67,9 +67,8 @@
   - favfreak.py
 - [ ] Employee Details
   - theHarvester
-- [ ] Secrets and Emails 
+- [ ] Secrets (EG: API Keys, Credentials)
   - Checking git commits using [trufflehog](https://github.com/trufflesecurity/trufflehog)
-  - Github Enumeration Tools
 - [ ] Parameters Enumerations
   - Arjun
   - x8 
