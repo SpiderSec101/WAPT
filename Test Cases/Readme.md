@@ -2,7 +2,6 @@
 
 - [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-ips-user-details-parameters)
 - [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
-- [Port Scanning](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#port-scanning)
 - [Github Enumeration](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#github-enumeration)
 - [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
 - [Meta Files](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#meta-files)
@@ -182,6 +181,7 @@
 ## Open Ports
 - [ ] naabu
 - [ ] nmap
+- [ ] rustscan
 - [ ] masscan
 - [ ] dnmasscan
 ## Automated Analysis
