@@ -1,7 +1,8 @@
 # Test Cases
 
-- [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-apexdomains-ipv4-ipv6)
+- [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-ips-user-details-parameters)
 - [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
+- [Port Scanning](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#port-scanning)
 - [Github Enumeration](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#github-enumeration)
 - [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
 - [Meta Files](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#meta-files)
@@ -26,7 +27,7 @@
 - [ ] Acquitisions
   - crunchbase.com
 - [ ] ASN
-  - (BGP Toolkit)[https://bgp.he.net/]
+  - [BGP Toolkit](https://bgp.he.net/)
   - BGP View API
   - nmap
 - [ ] Extracting Domains from ASN
@@ -84,6 +85,10 @@
 - [ ] fierce
 - [ ] host
 - [ ] whois
+## Port Scanning
+- [ ] naabu
+- [ ] nmap
+- [ ] rustscan
 ## Github Enumeration
   - git-history
   - github-dorks
