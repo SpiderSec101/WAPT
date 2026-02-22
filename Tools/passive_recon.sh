@@ -85,7 +85,7 @@ wget https://gist.githubusercontent.com/jhaddix/1fb7ab2409ab579178d2a79959909b33
 bash Gdorklink.sh $1
 echo "[*] Go through the dorks "
 #~~~~~~~~~~~~ Acquitions ~~~~~~~~~~~~~~~
-echo "[*]Find the Acquitions from crunchbase.com and chatGPT. The apex domains"
+echo "[*] Find the Acquitions from crunchbase.com. The apex domains"
 #~~~~~~~~~~~~ ASN ~~~~~~~~~~~~~~~
 echo "[*]Finding the ASN from https://bgp.he.net" 
 curl -sL https://bgp.he.net/search\?search%5Bsearch%5D=$company\&commit=Search -H 'User-Agent: Mozilla/Firefox' | grep -Po 'AS[0-9]*' | grep -vw 'AS' | sort -u > asn
@@ -93,6 +93,7 @@ curl -s https://api.bgpview.io/search\?query_term=$company | jq -r | grep 'asn'|
 cat asn | sort -u > ASN
 rm asn 
 echo "done" 
+#nmap
 
 #~~~~~~~~~~~~ amass intel ~~~~~~~~~~~~~~~
 echo "[*]Extracting domains, ips from ASN using amass intel" 
@@ -100,15 +101,15 @@ echo "[*]Extracting domains, ips from ASN using amass intel"
 k=0;for asn in $(cat ASN | tr -d 'AS');do echo "$k/$(wc -l ASN) => AS$asn"; sudo docker run --rm -it caffix/amass intel -asn "$asn" >> asn.assets ;k=$((k+1));done
 cat asn.assets | grep -vF ".$company." | sort -u > ../assets/domain/asn.apex-domains
 cat asn.assets | grep -F ".$company." | sort -u > ../assets/domain/asn.sub-domains
-echo "[-]Finally Done ;)" 
+echo "[-] Finally Done ;)" 
 #~~~~~~~~~~~~ crt.sh ~~~~~~~~~~~~~~~
-echo "[*]Enumerating domains from crt.sh (Certificate Transparency Logs) " 
+echo "[*] Enumerating domains from crt.sh (Certificate Transparency Logs) " 
 curl -sL http://crt.sh\?q=$1\&output=json -H 'User-Agent: Mozilla/Firefox' | jq . | grep -F 'common_name' | cut -d ':' -f2 | tr -d ',"' | grep -F ".$company." | sort -u > ../assets/domain/crt.sub-domains
 curl -sL http://crt.sh\?q=$1\&output=json -H 'User-Agent: Mozilla/Firefox' | jq . | grep -F 'common_name' | cut -d ':' -f2 | tr -d ',"' | grep -vF ".$company." | sort -u > ../assets/domain/crt.apex-domains
-echo "[-]Completed"
+echo "[-] Completed"
 
 #~~~~~~~~~~~~ Shosubgo ~~~~~~~~~~~~~~~
-echo "[*]Running shosubgo to extract subdomains  using Shodan"
+echo "[*] Running shosubgo to extract subdomains  using Shodan"
 shosubgo -d $1 -s $shodan_api_key > ../assets/domain/shodan.sub-domains
 #~~~~~~~~~~~~ Cloud ~~~~~~~~~~~~~~~
 echo "[*]Extracting domains, ips from cloud"
@@ -185,10 +186,6 @@ cat ../assets/domain/live.subdomains | dnsgen - | puredns resolve -r resolvers.t
 
 #~~~~~~~~~~~~~~~ final list of subdomains ~~~~~~~~~~~~~~~
 cat ../assets/domain/live.subdomains ../assets/domain/dnsgen.sub-domains | tr -d '/' | cut -d ':' -f2 | sort -u > final.subdomains
-
-#~~~~~~~~~~~~~~~ DNS Info ~~~~~~~~~~~~~~~
-#Only running one tool as it is an active recon
-dnsrecon -d $1 > ../assets/dns_records/out.dnsrecon
 
 #~~~~~~~~~~~~~~~ Taking ss ~~~~~~~~~~~~~~~
 cat ../assets/domain/final.subdomains | cut -d ':' -f2 | tr -d '/ ' | sort -u | awk '{print "http://"$0 "\n" "https://"$0}' > ./ss.subdomains
