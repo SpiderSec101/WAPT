@@ -68,8 +68,6 @@
   - html.sh (custom)
 - [ ] Favicon Analysis
   - favfreak.py
-- [ ] Employee Details
-  - theHarvester
 - [ ] Secrets (EG: API Keys, Credentials)
   - Checking git commits using [trufflehog](https://github.com/trufflesecurity/trufflehog)
 - [ ] Parameters Enumerations
@@ -79,6 +77,14 @@
   - Google Dorking
   - Censys
   - [Bultwith](https://builtwith.com/)
+## User Info
+- [ ] User names, emails
+  - theHarvester
+  - github-employess
+- [ ] Credentials
+  - github-dorks
+  - Google Dorking
+  - trufflehog
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
