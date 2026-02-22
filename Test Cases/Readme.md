@@ -51,6 +51,8 @@
 - [ ] Active Subdomain Bruteforcing
   - Dnsenum
   - Sublist3r
+  - ffuf
+  - gobuster
   - OneForAll
 - [ ] Live Hosts
   - httprobe
@@ -133,7 +135,7 @@
   - Profile Data
 - [ ] How the framework handles or protect itself from different vulns
 
-## Bruteforcing (Directories / parameters)
+## Bruteforcing (Directories / Parameters)
 - [ ] dirsearch
 - [ ] ffuf
 - [ ] feroxbuster
