@@ -236,12 +236,15 @@
 - [ ] Business Logic Flaws
 - [ ] Race Condition
 - [ ] APIs
+---
 - [ ] Backup Files
 - [ ] Directories / Sub-Directories
 - [ ] HTTP Headers
 - [ ] Cache Security
 - [ ] HTTP Request Smuggling
+- [ ] Prototype Pollution
 - [ ] Subdomain Takeovers
+- [ ] Unique Threat Model
 - [ ] Dependency Confusion Attacks
 - [ ] Low Hanging Fruits
 ---
