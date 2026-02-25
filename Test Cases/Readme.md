@@ -225,24 +225,24 @@
 - [ ] Authentication
   - Token Basis
   - Session Basis
-- [ ] Authorization (IDOR, Privilege Escalation)
-- [ ] Testing Parameters
+- [ ] SSO (SAML)
+- [ ] OAuth
+- [ ] Authorization (IDOR, Privilege Escalation, BOLA, BOPLA, BFLA)
 - [ ] User Input Fields
 - [ ] File Uploads
 - [ ] Chat-Bots
 - [ ] Forms
 - [ ] Debugging Page / Console
 - [ ] APIs
-- [ ] HTTP Headers
-- [ ] HTTP Methods
-- [ ] Backup Files
-- [ ] Directories and Sub-Directories
-- [ ] Cache Security
-- [ ] HTTP Request Smuggling
-- [ ] Business Logic Flaws
-- [ ] SSO / OAuth
 - [ ] Race Condition
 - [ ] Low Hanging Fruits
+- [ ] Backup Files
+- [ ] Directories and Sub-Directories
+- [ ] Business Logic Flaws
+- [ ] HTTP Headers
+- [ ] HTTP Methods
+- [ ] Cache Security
+- [ ] HTTP Request Smuggling
 ---
 ## Authentication
 - [ ] Weak Credentials
