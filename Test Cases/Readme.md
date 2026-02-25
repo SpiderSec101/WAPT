@@ -233,16 +233,17 @@
 - [ ] Chat-Bots
 - [ ] Forms
 - [ ] Debugging Page / Console
-- [ ] APIs
-- [ ] Race Condition
-- [ ] Low Hanging Fruits
-- [ ] Backup Files
-- [ ] Directories and Sub-Directories
 - [ ] Business Logic Flaws
+- [ ] Race Condition
+- [ ] APIs
+- [ ] Backup Files
+- [ ] Directories / Sub-Directories
 - [ ] HTTP Headers
-- [ ] HTTP Methods
 - [ ] Cache Security
 - [ ] HTTP Request Smuggling
+- [ ] Subdomain Takeovers
+- [ ] Dependency Confusion Attacks
+- [ ] Low Hanging Fruits
 ---
 ## Authentication
 - [ ] Weak Credentials
