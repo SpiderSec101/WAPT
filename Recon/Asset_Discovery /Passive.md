@@ -119,30 +119,29 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
    [https://github.com/incogbyte/shosubgo](https://github.com/incogbyte/shosubgo)  
    
        shosubgo -d example.com -s shodan_api_key_here
-
-- #### karma_v2  
-[https://github.com/Dheerajmadhukar/karma_v2](https://github.com/Dheerajmadhukar/karma_v2)  
-   * Setting-up the api key in the same directory of karma_v2 bash file
+- #### karma_v2
+  [https://github.com/Dheerajmadhukar/karma_v2](https://github.com/Dheerajmadhukar/karma_v2)  
+    * Setting-up the api key in the same directory of karma_v2 bash file
  
-         echo 'shodan_api_key' > .token
-   * Running the bash script
+          echo 'shodan_api_key' > .token
+    * Running the bash script
  
-         bash karmav2 -d example.com -l -1 -deep
-   * Some bash commands to extract desirable information
+          bash karmav2 -d example.com -l -1 -deep
+    * Some bash commands to extract desirable information
      
-         jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
+          jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
 
 - #### kaeferjaeger.gay
-[https://kaeferjaeger.gay](https://kaeferjaeger.gay)
-   * This site scan all the data of wellknown cloud service providers every week and pull down IPs SSL Certificates
-   * To download, scroll down and select the ```sni-ip-ranges```
-   * Then you can see all the well known cloud service providers, select one of them and go to the ```ipv4_merged_sni.txt```
-   * To download make a directory with the name of the cloud service provider and use wget
-   * The cloud service providers are amazon, google, microsoft, digitalocean, oracle
+  [https://kaeferjaeger.gay](https://kaeferjaeger.gay)  
+    * This site scan all the data of wellknown cloud service providers every week and pull down IPs SSL Certificates
+    * To download, scroll down and select the ```sni-ip-ranges```
+    * Then you can see all the well known cloud service providers, select one of them and go to the ```ipv4_merged_sni.txt```
+    * To download make a directory with the name of the cloud service provider and use wget
+    * The cloud service providers are amazon, google, microsoft, digitalocean, oracle
  
-         wget https://kaeferjaeger.gay/sni-ip-ranges/CLOUD_PROVIDERS/ipv4_merged_sni.txt
+          wget https://kaeferjaeger.gay/sni-ip-ranges/CLOUD_PROVIDERS/ipv4_merged_sni.txt
      
-   * After downloading the text file you can apply these bash scripts to extract data out of it
+    * After downloading the text file you can apply these bash scripts to extract data out of it
  
            cat *.txt | grep -F ".target.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u
  
