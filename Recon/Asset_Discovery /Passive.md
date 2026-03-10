@@ -4,12 +4,12 @@
 * I have metioned what we want to extract and different processes and tool to do so.
 ---  
 ### 1. Acquisitions
-  * [Crunchbase](https://www.crunchbase.com/)
+  * Crunchbase - [Link](https://www.crunchbase.com/)
 ### 2. ASN (Auonomous System Numbers)
 It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
-  * [Hurricane Electric BGP Toolkit](https://bgp.he.net/)
-  * [BGP View API](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#bgp-view-api)
-  * [Nmap](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#nmap)
+  * [Hurricane Electric BGP Toolkit]()
+  * [BGP View API]()
+  * [Nmap]()
 ### 3. Apex Domains and Subdomains    
   * [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-intel)
   * [shodan](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shodan)
@@ -50,19 +50,21 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 
 
 ---  
-#### BGP View API
-    curl -s https://api.bgpview.io/search?query_term=<company_name> | jq -r | grep -i '"asn"' | cut -d : -f2 | tr -d ','
+#### Hurricane BGP elctric Toolkit
+    curl -sL https://bgp.he.net/search\?search%5Bsearch%5D=TARGET_NAME\&commit=Search -H 'User-Agent: Mozilla/Firefox' | grep -Po 'AS[0-9]*' | grep -vw 'AS' | sort -u 
 
+#### BGP View API
+    curl -s https://api.bgpview.io/search\?query_term=TARGET_NAME | jq -r | grep 'asn'| cut -d ':' -f2 | tr -d ',[]' | sed -e 's/\ /AS/g'| grep -Po '(AS[0-9]+)'
     
 #### Nmap  
   * Scripts for scanning the ASN
 
         ls /usr/share/nmap/scripts | grep -i asn
-  * Then you can choose any one script as,
 
-          
-        nmap --script=asn-query.nse -T2 -Pn example.com
-Nmap provides a script called targets-asn.nse which also can be used to enumerate the ASN.  
+  * Then you can choose any one script as,
+Nmap provides a script called targets-asn.nse which also can be used to enumerate the ASN.
+
+        nmap --script=targets-asn -T3 -Pn target.com  
 
 #### amass intel
   * You can use this command to extract the domains
