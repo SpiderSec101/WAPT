@@ -66,8 +66,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
         nmap --script=targets-asn -T3 -Pn target.com  
 
-#### amass intel
-  * You can use this command to extract the domains
+#### amass intel [Docker Image](https://hub.docker.com/r/caffix/amass)
   * Every ASN has associated IP ranges, amass used to look that ranges
   * Then it performs a reverse DNS lookup, check the domain and subdomain names pointing to an IP
   * It also used to look through OSINT sources, Certificate Transparency Logs, DNS Databases, Registry Informations etc.
@@ -75,14 +74,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
         amass intel -asn 1234
   * I have written a bash script to automate this process a little bit. Save the numbers like AS1234 or ASN1234 in a file named ASN and run this script in the same directory.
 
-        #!/bin/bash
-
-        for i in $(cat ASN)
-        do
-            x=$(echo "$i" | tr -d 'ASN')
-            output=$(amass intel -asn "$x")
-            echo "$output"
-        done
+        k=0;for asn in $(cat ASN | tr -d 'AS');do echo "$k/$(wc -l ASN) => AS$asn"; sudo docker run --rm -it caffix/amass intel -asn "$asn" ;k=$((k+1));done
 
 #### shodan
     shodan domain -D example.com -S
