@@ -14,11 +14,15 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-intel)
 - ### Certificate Transparency
 - [ ] [crt.sh](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#crtsh)
-- ### 
-  * [shodan](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shodan)
-  * [shosubgo](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shosubgo)
-  * [karma_v2](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#karma_v2)
-  * [Cloud](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#Cloud)
+- ### Shodan
+- [ ] [shodan cli](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shodan)
+- [ ] [shosubgo](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shosubgo)
+- [ ] [karma_v2](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#karma_v2)
+
+- ### Cloud Data
+- [ ] [kaeferjaeger.gay](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#kaeferjaegergay)
+
+
   * [whoxy](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#whoxy)
   * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytics-tracker-code)
   * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#github)
@@ -105,17 +109,18 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
 
 
-#### shodan
-    shodan domain -D example.com -S
-    jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
+- #### shodan cli
+
+      shodan domain -D target.com -S
+      jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
   -S is used to specify the search query or filter the scan 
 
-#### shosubgo  
+- #### shosubgo  
    [https://github.com/incogbyte/shosubgo](https://github.com/incogbyte/shosubgo)  
    
        shosubgo -d example.com -s shodan_api_key_here
 
-#### karma_v2  
+- #### karma_v2  
 [https://github.com/Dheerajmadhukar/karma_v2](https://github.com/Dheerajmadhukar/karma_v2)  
   * Setting-up the api key in the same directory of karma_v2 bash file
 
@@ -124,35 +129,27 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
         bash karmav2 -d example.com -l -1 -deep
   * Some bash commands to extract desirable information
-
+    
         jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
 
-        awk -F '::' '{for (i=0, i<=NF, i++) print $i}' <file_name_here>
-
-        # For extracting only IPv4
-    
-        awk -F '::' '{for (i=1; i<=NF; i++) if ($i ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) print $i}' <file_name_here>
-
-        # For extracting only domains and subdomains
-    
-        awk -F '::' '{for (i=1; i<=NF; i++) if ($i ~ /^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/) print $i}' <file_name_here>
-
-
-
-#### Cloud
-[https://kaeferjaeger.gay/](https://kaeferjaeger.gay/)
+- #### kaeferjaeger.gay
+[https://kaeferjaeger.gay](https://kaeferjaeger.gay)
   * This site scan all the data of wellknown cloud service providers every week and pull down IPs SSL Certificates
   * To download, scroll down and select the ```sni-ip-ranges```
   * Then you can see all the well known cloud service providers, select one of them and go to the ```ipv4_merged_sni.txt```
   * To download make a directory with the name of the cloud service provider and use wget
+  * The cloud service providers are amazon, google, microsoft, digitalocean, oracle
 
-        wget https://kaeferjaeger.gay/sni-ip-ranges/amazon/ipv4_merged_sni.txt
+        wget https://kaeferjaeger.gay/sni-ip-ranges/CLOUD_PROVIDERS/ipv4_merged_sni.txt
+    
   * After downloading the text file you can apply these bash scripts to extract data out of it
 
-          cat *.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u
+          cat *.txt | grep -F ".target.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u
 
-    
+
           cat amazon/ipv4_merged_sni.txt digitalocean/ipv4_merged_sni.txt google/ipv4_merged_sni.txt microsoft/ipv4_merged_sni.txt oracle/ipv4_merged_sni.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u > cloud.subdomains.txt
+
+---
 
 #### whoxy
 [whoxy.com](https://www.whoxy.com/)
