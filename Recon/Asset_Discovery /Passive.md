@@ -7,9 +7,9 @@
   * Crunchbase - [Link](https://www.crunchbase.com/)
 ### 2. ASN (Auonomous System Numbers)
 It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
-  * [Hurricane Electric BGP Toolkit]()
-  * [BGP View API]()
-  * [Nmap]()
+  * [Hurricane Electric BGP Toolkit](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#hurricane-bgp-elctric-toolkit)
+  * [BGP View API](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bgp-view-api)
+  * [Nmap](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#nmap)
 ### 3. Apex Domains and Subdomains    
   * [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-intel)
   * [shodan](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shodan)
