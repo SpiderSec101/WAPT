@@ -52,14 +52,14 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 
 
 ---  
-- [ ] Hurricane BGP Electric Toolkit
+- Hurricane BGP Electric Toolkit
     curl -sL https://bgp.he.net/search\?search%5Bsearch%5D=TARGET_NAME\&commit=Search -H 'User-Agent: Mozilla/Firefox' | grep -Po 'AS[0-9]*' | grep -vw 'AS' | sort -u 
 
-- [ ] BGP View API
+- BGP View API
 
       curl -s https://api.bgpview.io/search\?query_term=TARGET_NAME | jq -r | grep 'asn'| cut -d ':' -f2 | tr -d ',[]' | sed -e 's/\ /AS/g'| grep -Po '(AS[0-9]+)'
     
-- [ ] Nmap  
+- Nmap  
   * Scripts for scanning the ASN
 
         ls /usr/share/nmap/scripts | grep -i asn
@@ -69,7 +69,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
         nmap --script=targets-asn -T3 -Pn target.com  
 
-- [ ] amass intel 
+- amass intel 
   * [Docker Image](https://hub.docker.com/r/caffix/amass)
   * Every ASN has associated IP ranges, amass used to look that ranges
   * Then it performs a reverse DNS lookup, check the domain and subdomain names pointing to an IP
@@ -80,7 +80,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
    
          k=0;for asn in $(cat ASN | tr -d 'AS');do echo "$k/$(wc -l ASN) => AS$asn"; sudo docker run --rm -it caffix/amass intel -asn "$asn" ;k=$((k+1));done
 
-- [ ] crt.sh
+- crt.sh
 
   * crt.sh used to find subdomians by scanning SSL/TLS certificates
   * When an organisation sets a SSL / TLS certificate for their domain they may include other domains and subdomains under the same certificate
