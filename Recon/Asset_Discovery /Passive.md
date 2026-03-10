@@ -3,15 +3,18 @@
 * Here I have made a list which helps me in passive recon.
 * I have metioned what we want to extract and different processes and tool to do so.
 ---  
-### 1. Acquisitions
-  * Crunchbase - [Link](https://www.crunchbase.com/)
-### 2. ASN (Auonomous System Numbers)
+- ### Acquisitions
+- [ ] Crunchbase - [Link](https://www.crunchbase.com/)
+- ### ASN (Auonomous System Numbers)
 It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
-  * [Hurricane Electric BGP Toolkit](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#hurricane-bgp-elctric-toolkit)
-  * [BGP View API](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bgp-view-api)
-  * [Nmap](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#nmap)
-### 3. Apex Domains and Subdomains    
-  * [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-intel)
+- [ ] [Hurricane Electric BGP Toolkit](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#hurricane-bgp-elctric-toolkit)
+- [ ] [BGP View API](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bgp-view-api)
+- [ ] [Nmap](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#nmap)
+- ### Seed Domains from ASN    
+- [ ] [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-intel)
+- ### Certificate Transparency
+- [ ] [crt.sh](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#crtsh)
+- ### 
   * [shodan](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shodan)
   * [shosubgo](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shosubgo)
   * [karma_v2](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#karma_v2)
@@ -20,7 +23,6 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytics-tracker-code)
   * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#github)
   * [SubreconGPT](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#subrecongpt)
-  * [crt.sh](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#crtsh)
 ### 4. Dorks
   * [Github Dorks](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#github-dorks)
 ### 5. Subdomain Scraping
@@ -50,13 +52,14 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 
 
 ---  
-#### Hurricane BGP Electric Toolkit
+- [ ] Hurricane BGP Electric Toolkit
     curl -sL https://bgp.he.net/search\?search%5Bsearch%5D=TARGET_NAME\&commit=Search -H 'User-Agent: Mozilla/Firefox' | grep -Po 'AS[0-9]*' | grep -vw 'AS' | sort -u 
 
-#### BGP View API
-    curl -s https://api.bgpview.io/search\?query_term=TARGET_NAME | jq -r | grep 'asn'| cut -d ':' -f2 | tr -d ',[]' | sed -e 's/\ /AS/g'| grep -Po '(AS[0-9]+)'
+- [ ] BGP View API
+
+      curl -s https://api.bgpview.io/search\?query_term=TARGET_NAME | jq -r | grep 'asn'| cut -d ':' -f2 | tr -d ',[]' | sed -e 's/\ /AS/g'| grep -Po '(AS[0-9]+)'
     
-#### Nmap  
+- [ ] Nmap  
   * Scripts for scanning the ASN
 
         ls /usr/share/nmap/scripts | grep -i asn
@@ -66,15 +69,40 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
         nmap --script=targets-asn -T3 -Pn target.com  
 
-#### amass intel [Docker Image](https://hub.docker.com/r/caffix/amass)
+- [ ] amass intel 
+  * [Docker Image](https://hub.docker.com/r/caffix/amass)
   * Every ASN has associated IP ranges, amass used to look that ranges
   * Then it performs a reverse DNS lookup, check the domain and subdomain names pointing to an IP
   * It also used to look through OSINT sources, Certificate Transparency Logs, DNS Databases, Registry Informations etc.
 
         amass intel -asn 1234
-  * I have written a bash script to automate this process a little bit. Save the numbers like AS1234 or ASN1234 in a file named ASN and run this script in the same directory.
+   * Or
+   
+         k=0;for asn in $(cat ASN | tr -d 'AS');do echo "$k/$(wc -l ASN) => AS$asn"; sudo docker run --rm -it caffix/amass intel -asn "$asn" ;k=$((k+1));done
 
-        k=0;for asn in $(cat ASN | tr -d 'AS');do echo "$k/$(wc -l ASN) => AS$asn"; sudo docker run --rm -it caffix/amass intel -asn "$asn" ;k=$((k+1));done
+- [ ] crt.sh
+
+  * crt.sh used to find subdomians by scanning SSL/TLS certificates
+  * When an organisation sets a SSL / TLS certificate for their domain they may include other domains and subdomains under the same certificate
+  * SSL certificates have a field SAN (Subject Alternative Name) which holds additional domain and subdomain names that the certificate covers.
+  * To search for subdomains can use % as your subdomain level requirement
+
+        %.%.%.example.com
+  * Search for subdomains with keywords like internal, api, auth, admin etc.
+  * You can extract information from terminal by using curl and the json ouput format
+  * Extracting Subdomains
+
+        echo "Extracting Subdomains" ;curl -sL http://crt.sh\?q=TARGET_NAME\&output=json -H 'User-Agent: Mozilla/Firefox' | jq . | grep -F 'common_name' | cut -d ':' -f2 | tr -d ',"' | grep -F ".$company." | sort -u
+
+  * Extracting Apex domains
+
+        curl -sL http://crt.sh\?q=TARGET_NAME\&output=json -H 'User-Agent: Mozilla/Firefox' | jq . | grep -F 'common_name' | cut -d ':' -f2 | tr -d ',"' | grep -vF ".$company." | sort -u
+
+  * Then one can use the host command to resolve the IP of the domains.
+
+        for i in $(cat file_name); do host $i | grep 'has address' | awk '{print $1,"==>", $4}'; done
+
+
 
 #### shodan
     shodan domain -D example.com -S
@@ -162,22 +190,6 @@ You can checkout other github enumerating tools from here [https://10degres.net/
 [https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
 
     bash Gdorklink.sh example.com 
-#### crt.sh
-
-  * crt.sh used to find subdomians by scanning SSL/TLS certificates
-  * When an organisation sets a SSL / TLS certificate for their domain they may include other domains and subdomains under the same certificate
-  * SSL certificates have a field SAN (Subject Alternative Name) which holds additional domain and subdomain names that the certificate covers.
-  * To search for subdomains can use % as your subdomain level requirement
-
-        %.%.%.example.com
-  * Search for subdomains with keywords like internal, api, auth, admin etc.
-  * You can extract information from terminal by using curl and the json ouput format
-
-        curl -s https://crt.sh/\?q=<company_domain_name>\&output=json | jq . | grep 'common_name' | tr -d ',":' | awk '{print $2}' | sort -u
-  * This will extract a list of subdomains and wildcards.
-  * Then one can use the host command to resolve the IP with the domains.
-
-        for i in $(cat file_name); do host $i | grep 'has address' | awk '{print $1,"==>", $4}'; done
 
 #### Config File  
 Configuring the APIs for the tools increases their efficiancy by up to 50%
