@@ -50,7 +50,7 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 
 
 ---  
-#### Hurricane BGP elctric Toolkit
+#### Hurricane BGP Electric Toolkit
     curl -sL https://bgp.he.net/search\?search%5Bsearch%5D=TARGET_NAME\&commit=Search -H 'User-Agent: Mozilla/Firefox' | grep -Po 'AS[0-9]*' | grep -vw 'AS' | sort -u 
 
 #### BGP View API
@@ -71,7 +71,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
   * Every ASN has associated IP ranges, amass used to look that ranges
   * Then it performs a reverse DNS lookup, check the domain and subdomain names pointing to an IP
   * It also used to look through OSINT sources, Certificate Transparency Logs, DNS Databases, Registry Informations etc.
-    
+
         amass intel -asn 1234
   * I have written a bash script to automate this process a little bit. Save the numbers like AS1234 or ASN1234 in a file named ASN and run this script in the same directory.
 
