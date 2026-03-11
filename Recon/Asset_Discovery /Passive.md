@@ -22,13 +22,13 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [kaeferjaeger.gay](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#kaeferjaegergay)
 
 - ### Github Enumeration [Down](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
-- [ ] git-history
-- [ ] github-dorks
-- [ ] github-endpoints
-- [ ] github-secrets
-- [ ] github-subdomains
-- [ ] github-contributors
-- [ ] github-employees
+- [ ] [git-history](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [github-dorks](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [github-endpoints](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [github-secrets](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [github-subdomains](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [github-contributors](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 
 
 
