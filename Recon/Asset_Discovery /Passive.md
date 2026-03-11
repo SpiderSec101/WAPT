@@ -18,9 +18,22 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [shodan cli](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shodan)
 - [ ] [shosubgo](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shosubgo)
 - [ ] [karma_v2](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#karma_v2)
-
 - ### Cloud Data
 - [ ] [kaeferjaeger.gay](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#kaeferjaegergay)
+- ### Github Enumeration
+- [ ] [git-history]()
+- [ ] [github-dorks]()
+- [ ] [github-endpoints]()
+- [ ] [github-secrets]()
+- [ ] [github-subdomains]()
+- [ ] [github-contributors]()
+- [ ] [github-employees]()
+
+
+
+
+
+
 
 
   * [whoxy](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#whoxy)
@@ -147,6 +160,65 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
  
  
            cat amazon/ipv4_merged_sni.txt digitalocean/ipv4_merged_sni.txt google/ipv4_merged_sni.txt microsoft/ipv4_merged_sni.txt oracle/ipv4_merged_sni.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u > cloud.subdomains.txt
+
+
+- #### Github Enumeration
+
+    * git-history
+      
+      [https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/git-history.py](https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/git-history.py)
+
+      This script performs regexps on all repositories located in a specified folder and subfolders. But more it searches in the history of the repositories, not only the current version of the files. All commits are checked!
+
+          python3 git-history.py -p ~/repos -s ".*TARGET_NAME.*"
+      
+    * github-dorks
+      
+      [https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-dorks.py](https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-dorks.py)
+
+      Performs dorks on GitHub for the users/organizations provided (list can be provided by separating users/orgs with comma). Dorks must be listed in a single text file. Results are not stored (could be an option?), only the number or results is displayed.
+
+          python3 github-dorks.py -u target-username -d dorks.txt  -e 10
+
+     * github-endpoints
+
+       [https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-endpoints.py](https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-endpoints.py)
+
+       Improve you recon by searching endpoints on GitHub. Very useful, you can also get some extras subdomains. Relative urls can be displayed or not as well as external domains urls. Based on regexp, it also has an exclude list. Feed it as much as you can to filter the results the way you like!
+
+           python3 github-endpoints.py -d target-website.com -s -r
+
+     * github-secrets
+
+       [https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-secrets.py](https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-secrets.py)
+
+       Find secrets deployed on GitHub
+
+           	python3 github-secrets.py -s "AWS_KEY filename:.env" -r "AKIA[A-Z0-9]{16}"
+
+     * github-subdomains
+
+       [https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)
+
+       Find additional subdomains on GitHub. Very useful during you recon phase, you will probably get some extras subdomains other tools didn’t find because not public.
+       
+           github-subdomains -d tesla.com -t github_api_key_here -o outputfile.txt
+
+     * github-contributors
+
+       [https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-contributors.py](https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-contributors.py)
+
+       This script returns some informations about the peoples listed as contributors of every repositories of an organization.
+
+           	python3 git-contributors.py -o tesla
+
+     * github-employees
+
+       [https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-employees.py](https://raw.githubusercontent.com/gwen001/github-search/refs/heads/master/github-employees.py)
+
+       (try to) Find GitHub account of employees of a company through Google search and displays some basics informations about them.
+
+           	python3 github-employees.py -m github -p 30 -t "Tesla"
 
 ---
 
