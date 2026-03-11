@@ -30,7 +30,8 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [github-contributors](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 
-
+- ### Ad/Analytics Tracker Code
+- [ ] [getrelationship.py]()
 
 
 
@@ -220,6 +221,12 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
        (try to) Find GitHub account of employees of a company through Google search and displays some basics informations about them.
 
            	python3 github-employees.py -m github -p 30 -t "Tesla"
+
+
+- #### getrelationship.py
+  [https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
+
+      python3 getrelationship.py tesla.com <the-builwith-cookie> 
 
 ---
 
