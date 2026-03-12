@@ -59,8 +59,8 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
 - ### TLDs 
-- [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tlds)
-- [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tlds)
+- [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorking)
+- [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorking)
 - [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
 
 
