@@ -33,6 +33,8 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - ### Ad/Analytics Tracker Code
 - [ ] [getrelationship.py](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytic-tracker)
 
+- ### Amass Scnning
+- [ ] [amass enum](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
 
 
 ---
@@ -228,6 +230,19 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
      * [getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
 
       python3 getrelationship.py tesla.com <the-builwith-cookie> 
+
+
+- #### amass enum
+
+    * [Docs](https://www.hahwul.com/blog/2020/amass-go-deep-in-the-sea-with-free-apis/)
+    * Setup the config file 
+
+          amass enum -d target.com
+    * Or
+
+          sudo docker run --rm -it caffix/amass enum -d target.com
+
+
 
 ---
 
