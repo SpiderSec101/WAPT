@@ -223,8 +223,9 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
            	python3 github-employees.py -m github -p 30 -t "Tesla"
 
 
-- #### getrelationship.py
-  [https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
+- #### Ad/Analytic Tracker
+
+     * [getrelationship.py]((https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py))
 
       python3 getrelationship.py tesla.com <the-builwith-cookie> 
 
