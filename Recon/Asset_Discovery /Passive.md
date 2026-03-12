@@ -246,41 +246,41 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
       python3 getrelationship.py tesla.com <the-builwith-cookie> 
 
 - #### Config File  
-Configuring different APIs for the tools increases their efficiancy by up to 50%
-  * Places to get the free API keys are [Projectdiscovery.io](https://chaos.projectdiscovery.io/#/)(chaos) , Shodan, GitHub, X Api, FacebookCT, etc.
-  * Here is a blog: https://www.hahwul.com/2020/09/23/amass-go-deep-in-the-sea-with-free-apis/  . It helps to understand how one can work with amass using free and paid APIs.
-  * Example of setting up the config file
+     * Configuring different APIs for the tools increases their efficiancy by up to 50%
+     * Places to get the free API keys are [Projectdiscovery.io](https://chaos.projectdiscovery.io/#/)(chaos) , Shodan, GitHub, X Api, FacebookCT, etc.
+     * Here is a blog: https://www.hahwul.com/2020/09/23/amass-go-deep-in-the-sea-with-free-apis/  . It helps to understand how one can work with amass using free and paid APIs.
+     * Example of setting up the config file
 
         mkdir -p ~/.config/amass
         touch ~/.config/amass/config.ini
    
-  * Open the ```config.ini``` and edit as shown below
+     * Open the ```config.ini``` and edit as shown below
 
-        ; Add your API keys under the relevant sections
-        ; Example: 
-        
-        ; OpenAI
-        openai = 
-        
-        ; Chaos
-        virustotal =
-        
-        ; Shodan
-        shodan = 
-        
-        ; Github
-        spyse = 
-        
-        ; Facebook
-        securitytrails = 
-        
-        ; PassiveTotal
-        ;censys = your_PassiveTotal_api_secret
-        
-        ; Twitter
-        apikey = 
-        secret =
-    
+           ; Add your API keys under the relevant sections
+           ; Example: 
+           
+           ; OpenAI
+           openai = 
+           
+           ; Chaos
+           virustotal =
+           
+           ; Shodan
+           shodan = 
+           
+           ; Github
+           spyse = 
+           
+           ; Facebook
+           securitytrails = 
+           
+           ; PassiveTotal
+           ;censys = your_PassiveTotal_api_secret
+           
+           ; Twitter
+           apikey = 
+           secret =
+       
 - #### amass enum
 
     * [Docs](https://www.hahwul.com/blog/2020/amass-go-deep-in-the-sea-with-free-apis/)
