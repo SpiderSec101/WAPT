@@ -308,12 +308,14 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
           subfinder -d target.com -all -o output.txt
 
 - #### resolvers.txt
+
 [https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt](https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt)
-    * resolvers.txt is a file that contains a list of DNS resolvers (i.e., DNS servers) that different tools will use to perform DNS lookups. Each line in the file represents the IP address of a DNS resolver
+
+   * resolvers.txt is a file that contains a list of DNS resolvers (i.e., DNS servers) that different tools will use to perform DNS lookups. Each line in the file represents the IP address of a DNS resolver
 
 - #### puredns
 
-    * [https://github.com/d3mondev/puredns](https://github.com/d3mondev/puredns)
+  [https://github.com/d3mondev/puredns](https://github.com/d3mondev/puredns)
       
           puredns bruteforce wordlists.txt target.com -r resolvers.txt -w outputfile.txt
 
