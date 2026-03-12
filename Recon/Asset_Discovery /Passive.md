@@ -225,7 +225,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
 - #### Ad/Analytic Tracker
 
-     * [getrelationship.py]((https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py))
+     * [getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
 
       python3 getrelationship.py tesla.com <the-builwith-cookie> 
 
