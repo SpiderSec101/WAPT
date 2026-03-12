@@ -46,6 +46,17 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [amass](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass)
 
 
+- ### Live Subdomains
+- [ ] [httprobe](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httprobe)
+- [ ] [httpx](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httpx)
+
+- ### Permuted Scanning
+- [ ] [dnsgen](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#dnsgen)
+
+- ### Screenshots
+- [ ] [httpx](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httpx-ss)
+- [ ] [Eyewitness](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#eyewitness)
+- [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
 
 ---
@@ -327,6 +338,32 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 - #### amass
       amass enum -brute -d company.com -w wrodlist.txt -rf resolvers.txt
 
+- #### httpx
+      httpx -l all2.subdomains -silent
+ 
+- #### httprobe
+ 
+      cat all-domains.txt | httprobe
+
+- #### dnsgen
+      cat sub-domain-file.txt | dnsgen - | puredns resolve -r resolvers.txt 
+
+- #### httpx ss
+
+      cat all-sibdomains.txt | cut -d ':' -f2 | tr -d '/ ' | sort -u | awk '{print "http://"$0 "\n" "https://"$0}' > ./ss.subdomains
+  
+      if [ -f resume.cfg ]; then 
+      	httpx -l ss.sub-domains -ss -system-chrome -srd ./ss -threads 1 -timeout 20 -retries 1 -no-screenshot-full-page -resume
+      else
+      	httpx -l ss.sub-domains -ss -system-chrome -srd ../ss -threads 1 -timeout 20 -retries 1 -no-screenshot-full-page
+
+- #### Eyewitness
+  [https://github.com/RedSiege/EyeWitness](https://github.com/RedSiege/EyeWitness)
+
+      eyewitness -f path/to/urls -d path/to/directory --web --no-propmpt --no-dns
+
+- #### Aquatone
+  [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone)
 
 
 
