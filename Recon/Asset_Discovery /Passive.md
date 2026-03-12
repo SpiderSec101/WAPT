@@ -39,6 +39,10 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 
 - ### Subfinder  [>>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subfinder)
 
+- ### Passive Subdomain Bruteforcing
+- [ ] [puredns](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#puredns)
+- [ ] [shuffledns](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#shuffledns)
+- [ ] [amass](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass)
 
 
 
@@ -264,7 +268,23 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
           subfinder -d target.com -all -o output.txt
 
+- #### resolvers.txt
+[https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt](https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt)
+    * resolvers.txt is a file that contains a list of DNS resolvers (i.e., DNS servers) that different tools will use to perform DNS lookups. Each line in the file represents the IP address of a DNS resolver
 
+- #### puredns
+
+    * [https://github.com/d3mondev/puredns](https://github.com/d3mondev/puredns)
+      
+          puredns bruteforce wordlists.txt target.com -r resolvers.txt -w outputfile.txt
+
+- #### shuffledns
+  [https://github.com/projectdiscovery/shuffledns](https://github.com/projectdiscovery/shuffledns)
+
+      shuffledns -d company.com -w wrodlist.txt -r resolvers.txt -mode bruteforce -silent
+
+- #### amass
+      amass enum -brute -d company.com -w wrodlist.txt -rf resolvers.txt
 
 
 
