@@ -37,7 +37,8 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [amass enum](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
 - [ ] [BBOT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bbot)
 
-- ### Subfinder  [>>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subfinder)
+- ### Subfinder
+- [ ] [>>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subfinder)
 
 - ### Passive Subdomain Bruteforcing
 - [ ] [puredns](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#puredns)
@@ -177,6 +178,8 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
 
 - #### Github Enumeration
+    * Get the github token: [https://github.com/settings/tokens](https://github.com/settings/tokens)
+    * Different GithubEnumeration tools: [https://10degres.net/github-tools-collection/](https://10degres.net/github-tools-collection/)
 
     * git-history
       
@@ -238,10 +241,46 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 - #### Ad/Analytic Tracker
 
      * [getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
+     * Get the cookie of [https://pro.builtwith.com/](https://pro.builtwith.com/) account
 
       python3 getrelationship.py tesla.com <the-builwith-cookie> 
 
+- #### Config File  
+Configuring different APIs for the tools increases their efficiancy by up to 50%
+  * Places to get the free API keys are [Projectdiscovery.io](https://chaos.projectdiscovery.io/#/)(chaos) , Shodan, GitHub, X Api, FacebookCT, etc.
+  * Here is a blog: https://www.hahwul.com/2020/09/23/amass-go-deep-in-the-sea-with-free-apis/  . It helps to understand how one can work with amass using free and paid APIs.
+  * Example of setting up the config file
 
+        mkdir -p ~/.config/amass
+        touch ~/.config/amass/config.ini
+   
+  * Open the ```config.ini``` and edit as shown below
+
+        ; Add your API keys under the relevant sections
+        ; Example: 
+        
+        ; OpenAI
+        openai = 
+        
+        ; Chaos
+        virustotal =
+        
+        ; Shodan
+        shodan = 
+        
+        ; Github
+        spyse = 
+        
+        ; Facebook
+        securitytrails = 
+        
+        ; PassiveTotal
+        ;censys = your_PassiveTotal_api_secret
+        
+        ; Twitter
+        apikey = 
+        secret =
+    
 - #### amass enum
 
     * [Docs](https://www.hahwul.com/blog/2020/amass-go-deep-in-the-sea-with-free-apis/)
@@ -297,23 +336,6 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
     https://api.whoxy.com/?key=<your_api_key_here>&reverse=whois&keyword=<company_name_here>&mode=domains
 
-#### Ad/Analytics Tracker Code  
-
-[https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)  
-You are going to need the cookie of your [https://pro.builtwith.com/](https://pro.builtwith.com/) account.
-
-    python3 getrelationship.py example.com <the-builwith-cookie>
-    
-#### Github
-[https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)    
-
-Here I am using a command line tool which uses a github api key and search the public github repositries for the subdomains of the target domain. It look through all of the hard coded data into the github repositries.
-
-Your can get your github api key from ```https://github.com/settings/tokens```
-
-    github-subdomains -d example.com -t github_api_key_here -o outputfile.txt
-You can checkout other github enumerating tools from here [https://10degres.net/github-tools-collection/](https://10degres.net/github-tools-collection/)
-
 #### SubreconGPT
   * First install the chaos-client from here [https://github.com/projectdiscovery/chaos-client](https://github.com/projectdiscovery/chaos-client)
   * Then download the python script from here [https://github.com/jhaddix/SubreconGPT](https://github.com/jhaddix/SubreconGPT)
@@ -330,34 +352,41 @@ You can checkout other github enumerating tools from here [https://10degres.net/
 
     bash Gdorklink.sh example.com 
 
-#### Config File  
-Configuring the APIs for the tools increases their efficiancy by up to 50%
+- #### Config File  
+Configuring different APIs for the tools increases their efficiancy by up to 50%
   * Places to get the free API keys are [Projectdiscovery.io](https://chaos.projectdiscovery.io/#/)(chaos) , Shodan, GitHub, X Api, FacebookCT, etc.
-  * Here is a blog => https://www.hahwul.com/2020/09/23/amass-go-deep-in-the-sea-with-free-apis/  . It helps to understand how one can work with amass using free and paid APIs.
-  * Setup the config file
+  * Here is a blog: https://www.hahwul.com/2020/09/23/amass-go-deep-in-the-sea-with-free-apis/  . It helps to understand how one can work with amass using free and paid APIs.
+  * Example of setting up the config file
 
         mkdir -p ~/.config/amass
         touch ~/.config/amass/config.ini
+   
   * Open the ```config.ini``` and edit as shown below
 
-        [datasources]
         ; Add your API keys under the relevant sections
         ; Example: 
         
+        ; OpenAI
+        openai = 
+        
         ; Chaos
-        virustotal = your_chaos_api_key
+        virustotal =
         
         ; Shodan
-        shodan = your_shodan_api_key
+        shodan = 
         
         ; Github
-        spyse = your_github_api_key
+        spyse = 
         
         ; Facebook
-        securitytrails = your_facebook_api_key
+        securitytrails = 
         
         ; PassiveTotal
-        censys = your_PassiveTotal_api_secret
+        ;censys = your_PassiveTotal_api_secret
+        
+        ; Twitter
+        apikey = 
+        secret = 
 
 #### amass enum
 
