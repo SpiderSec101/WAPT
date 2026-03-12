@@ -33,9 +33,9 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - ### Ad/Analytics Tracker Code
 - [ ] [getrelationship.py](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytic-tracker)
 
-- ### Amass Scnning
+- ### Scanning
 - [ ] [amass enum](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
-
+- [ ] [BBOT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bbot)
 
 ---
 
@@ -242,6 +242,14 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
           sudo docker run --rm -it caffix/amass enum -d target.com
 
+- #### bbot
+
+    * [https://github.com/blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot)
+    * Setup the config file 
+
+          pip install bbot
+
+          bbot -m otx -t target.com
 
 
 ---
