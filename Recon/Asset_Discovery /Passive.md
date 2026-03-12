@@ -37,6 +37,12 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [amass enum](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
 - [ ] [BBOT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bbot)
 
+- ### Subfinder  [>>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subfinder)
+
+
+
+
+
 ---
 
 
@@ -250,6 +256,18 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
           pip install bbot
 
           bbot -m otx -t target.com
+
+- #### subfinder
+
+    * [https://github.com/projectdiscovery/subfinder](https://github.com/projectdiscovery/subfinder)
+    * Setup the config file 
+
+          subfinder -d target.com -all -o output.txt
+
+
+
+
+
 
 
 ---
