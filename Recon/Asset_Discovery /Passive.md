@@ -58,36 +58,16 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [Eyewitness](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#eyewitness)
 - [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
+- ### TLDs 
+- [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tlds)
+- [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tlds)
+- [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
+
+
+
+
 
 ---
-
-
-  * [whoxy](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#whoxy)
-  * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytics-tracker-code)
-  * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#github)
-  * [SubreconGPT](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#subrecongpt)
-### 4. Dorks
-  * [Github Dorks](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#github-dorks)
-### 5. Subdomain Scraping
-  * [Config File](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#config-file)
-  * [amass enum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
-  * [subfinder](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#subfinder)
-  * [bbot](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#bbot)
-### 6. Subdomain Bruteforcing
-  * [wordlists.txt](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#wordliststxt)
-  * [resolvers.txt](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#resolverstxt)
-  * [amass enum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
-  * [puredns](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#puredns)
-  * [shuffledns](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shuffledns)
-### 7. Permuted Scanning
-  * [dnsgen](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#dnsgen)
-### 8. Live Subdomains
-  * [httprobe](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#murmur-hash)
-### 9. Backend Technologies
-  * [wappalyzer Extension](https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
-  * [built-with Extension](https://chromewebstore.google.com/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn?hl=en)
-  * [whatruns Extension](https://chromewebstore.google.com/detail/whatruns/cmkdbmfndkfgebldhnkbfhlneefdaaip?hl=en)
-  * [webanalyze](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#webanalyze)
 ### 10. Others
   * [dnsdumpster.com](https://dnsdumpster.com)
   * [sitereport.netcraft.com](https://sitereport.netcraft.com/)
@@ -365,8 +345,14 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 - #### Aquatone
   [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone)
 
+- #### TLDs
+     * Google Dorks
 
+           site:target.* -site:target.com
+     * Censys
 
+           company_name
+  
 
 ---
 
@@ -513,11 +499,6 @@ This tool helps to filter out the live domains.
 
 
 
-    
-    
-[logo]: [https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down) "Logo_HERE"
-    
-    
-    
+   
 
     
