@@ -59,8 +59,8 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
 - ### TLDs 
-- [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorking)
-- [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorking)
+- [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
+- [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
 
 
@@ -345,7 +345,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 - #### Aquatone
   [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone)
 
-- #### TLDs
+- #### TLD
      * Google Dorks
 
            site:target.* -site:target.com
