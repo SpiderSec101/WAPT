@@ -72,10 +72,12 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 
 
 ---
-### 10. Others
-  * [dnsdumpster.com](https://dnsdumpster.com)
-  * [sitereport.netcraft.com](https://sitereport.netcraft.com/)
-  * [hackertarget.com](https://hackertarget.com/domain-profiler/)
+- ### Others
+- [ ] [whoxy]()
+- [ ] [SubreconGPT]()
+- [ ] [dnsdumpster.com](https://dnsdumpster.com)
+- [ ] [sitereport.netcraft.com](https://sitereport.netcraft.com/)
+- [ ] [hackertarget.com](https://hackertarget.com/domain-profiler/)
 
 
 ---  
