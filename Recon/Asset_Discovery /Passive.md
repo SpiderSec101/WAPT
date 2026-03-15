@@ -432,12 +432,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
       
       site: target.com inurl: credentials inurl: password
 
-#### wordlists.txt
-  * SecLists
-  * all.txt from [https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056)
 
-
-    
     
 
 
