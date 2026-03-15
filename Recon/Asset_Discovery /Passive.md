@@ -63,6 +63,10 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
 
+- ### User Info
+- [ ] [theHarvester]()
+- [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [trufflehog]()
 
 
 
@@ -352,6 +356,16 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
      * Censys
 
            company_name
+
+- #### theHarvester
+
+[https://github.com/laramies/theHarvester](https://github.com/laramies/theHarvester)
+
+   * This command queries all available data sources to gather maximum information about the target domain. It provides comprehensive OSINT coverage.
+
+         theHarvester -d <domain> -b all -l 1000
+
+
   
 
 ---
