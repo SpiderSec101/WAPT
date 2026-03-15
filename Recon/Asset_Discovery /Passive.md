@@ -75,6 +75,9 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [WAF](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#wafw00f)
 - [ ] [Cloning](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httrack)
 
+- ### Dorking
+- [ ] [Google](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorks)
+- [ ] [Github](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-dorks)
 
 - ### Others
 - [ ] [whoxy](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#whoxy)
@@ -405,10 +408,31 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
         chaos -d example.com --key your_chaos_key_here | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
 
-#### Github Dorks
+
+- #### Github Dorks
 [https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
 
     bash Gdorklink.sh example.com 
+
+- #### Google Droks
+  
+| **Filter** | **Description** | **Example** |
+| --- | --- | --- |
+| intext | Searches for the occurrences of keywords all at once or one at a time. | `intext:"keyword"` |
+| inurl | Searches for a URL matching one of the keywords. | `inurl:"keyword"` |
+| allinurl | Searches for a URL matching all the keywords in the query. | `allinurl:"keyword"` |
+| intitle | Searches for occurrences of keywords in title all or one. | `intitle:"keyword"` |
+| allintitle | Searches for occurrences of keywords all at a time. | `allintitle:"keyword"` |
+| site | Specifically searches that particular site and lists all the results for that site. | `site:"www.google.com"` |
+| filetype | Searches for a particular filetype mentioned in the query. | `filetype:"pdf"` |
+| cache | Shows the version of the web page that Google has in its cache. | `cache:www.google.com` |
+
+
+      site: target.com filetype: env
+    
+      site:target.com intext:password intext:username intext:secret
+      
+      site: target.com inurl: credentials inurl: password
 
 #### wordlists.txt
   * SecLists
