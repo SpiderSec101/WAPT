@@ -390,23 +390,21 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
             httrack https://target.com
 
----
-
-#### whoxy
+- #### whoxy
 [whoxy.com](https://www.whoxy.com/)
 
     https://api.whoxy.com/?key=<your_api_key_here>&reverse=whois&keyword=<company_name_here>&mode=domains
 
-#### SubreconGPT
-  * First install the chaos-client from here [https://github.com/projectdiscovery/chaos-client](https://github.com/projectdiscovery/chaos-client)
-  * Then download the python script from here [https://github.com/jhaddix/SubreconGPT](https://github.com/jhaddix/SubreconGPT)
+- #### SubreconGPT
+    * First install the chaos-client from here [https://github.com/projectdiscovery/chaos-client](https://github.com/projectdiscovery/chaos-client)
+    * Then download the python script from here [https://github.com/jhaddix/SubreconGPT](https://github.com/jhaddix/SubreconGPT)
 
-        pip install openai==0.28
-
-        # Now get the chaos api key from https://chaos.projectdiscovery.io/
-        export PDCP_API_KEY="your_chaos_key_here"
-
-        chaos -d example.com --key your_chaos_key_here | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
+              pip install openai==0.28
+      
+              # Now get the chaos api key from https://chaos.projectdiscovery.io/
+              export PDCP_API_KEY="your_chaos_key_here"
+      
+              chaos -d example.com --key your_chaos_key_here | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
 
 
 - #### Github Dorks
@@ -414,7 +412,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
     bash Gdorklink.sh example.com 
 
-- #### Google Droks
+- #### Google Dorks
   
 | **Filter** | **Description** | **Example** |
 | --- | --- | --- |
