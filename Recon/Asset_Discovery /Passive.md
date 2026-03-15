@@ -68,16 +68,21 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [trufflehog](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#trufflehog)
 
+- ### Tech Profiling
+- [ ] Wappalyzer
+- [ ] Builtwith
+- [ ] Whatruns
+- [ ] [WAF](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#wafw00f)
+- [ ] [Cloning](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httrack)
 
 
-
----
 - ### Others
-- [ ] [whoxy]()
-- [ ] [SubreconGPT]()
+- [ ] [whoxy](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#whoxy)
+- [ ] [SubreconGPT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subrecongpt)
 - [ ] [dnsdumpster.com](https://dnsdumpster.com)
 - [ ] [sitereport.netcraft.com](https://sitereport.netcraft.com/)
 - [ ] [hackertarget.com](https://hackertarget.com/domain-profiler/)
+
 
 
 ---  
@@ -372,9 +377,15 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
           trufflehog git https://github.com/company_name/repo_name --results=verified 
 
 
+- #### wafw00f
+    * It helps to fingerprint the firewalls
 
+            wafw00f https://target.com
 
+- #### httrack
+    * It helps to clone the wep application to the local machine
 
+            httrack https://target.com
 
 ---
 
