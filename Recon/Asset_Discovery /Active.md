@@ -35,38 +35,38 @@
 ### Tools:  
 #### whois
     whois example.com
-#### - dnsrecon
+#### dnsrecon
     
-    ```
+    
     dnsrecon -d target.com
-    ```
     
-#### - fierce
     
-    ```
+#### fierce
+    
+    
     fierce --domain target.com
-    ```
     
-#### - dnsenum
     
-    ```
+#### dnsenum
+    
+    
     dnsenum target.com
-    ```
     
-#### - dig
     
-    ```
+#### dig
+    
+    
     dig axfr @<name-server-here> example.com
-    ```
+    
     
    - Here we are using the **`axfr`** protocol to zone transfer the DNS records of the target domain
 
-#### - host
+#### host
    - It helps to look for the A and AAAA records of the domain.
     
-    ```
+    
     host target.com
-    ```
+    
 #### wafw00f
     wafw00f -a example.com  
 #### gospider  
