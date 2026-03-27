@@ -5,7 +5,7 @@
 ---  
 - ### Acquisitions
 - [ ] Crunchbase - [Link](https://www.crunchbase.com/)
-- ### ASN (Auonomous System Numbers)
+- ### ASN (Autonomous System Numbers)
 It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
 - [ ] [Hurricane Electric BGP Toolkit](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#hurricane-bgp-elctric-toolkit)
 - [ ] [BGP View API](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bgp-view-api)
