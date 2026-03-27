@@ -1,4 +1,5 @@
 - ### [Wordlists]()
+- ### [Subdomain Bruteforcing]()
 - ### [Directory Bruteforcing]()
 - ### [Parameter Fuzzing]()
 - ### [URls and Endpoints]()
@@ -26,4 +27,43 @@
 - [ ] Parameters
   - SecLists
   - [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
+
+
+- #### Subdomain Bruteforcing 
+
+- [ ] sublist3r
+```bash
+sudo apt install sublist3r 
+sublist3r -b -d tesla.com -o domains.txt
+```
+- [ ] dnsenum
+```bash
+dnsenum --enum example.com -f /usr/share/wordlists/dirb/wordlists.txt -r
+```
+- `dnsenum --enum example.com` ⇒ here we specify the domain name and use a tuning option `enum` that is used to gather as much information as the tool can.
+- `-f`  Used to specify the word list
+- `-r` is used for recursive option, if it discovers a subdomain like `auth.example.com` it will try to find the subdomain of the extracted subdomain
+
+- [ ] ffuf
+```bash
+ffuf -u https://example.com -H 'HOST: FUZZ.example.com' -w /usr/share/wordlists/.....
+
+```
+- [ ] gobuster
+```bash
+gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
  
