@@ -6,18 +6,18 @@
 ---  
 
 ### - Domain Registration Information
-  * [<ins>whois</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#whois)
+  * [<ins>whois</ins>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Active.md#whois)
 ### - DNS Enumeration
-- [ ] [<ins>dnsrecon</ins>]()
-- [ ] [<ins>fierce</ins>]()
-- [ ] [<ins>dsnenum</ins>]()
-- [ ] [<ins>dig</ins>]()
-- [ ] [<ins>host</ins>]()
+- [ ] [<ins>dnsrecon</ins>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Active.md#dnsrecon)
+- [ ] [<ins>fierce</ins>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Active.md#fierce)
+- [ ] [<ins>dsnenum</ins>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Active.md#dnsenum)
+- [ ] [<ins>dig</ins>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Active.md#dig)
+- [ ] [<ins>host</ins>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Active.md#host)
 
 
+### - Web Application Firewall
+  * [<ins>wafw00f</ins>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Active.md#wafw00f)
 
-### 4. Web Application Firewall
-  * [<ins>wafw00f</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#wafw00f)
 ### 5. Webcrawlers
   * [<ins>gospider</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#gospider)
   * [<ins>hakrawler</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#hakrawler)
