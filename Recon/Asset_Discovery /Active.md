@@ -5,14 +5,17 @@
 * The list shows what type of informations I am trying to extract and to acheive that what kind of tools I am using. I also guide on how to use a tool.
 ---  
 
-### 1. Domain Registration Information
+### - Domain Registration Information
   * [<ins>whois</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#whois)
-### 2. DNS Lookup and Querying
-  * [<ins>dig</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#dig)
-  * [<ins>host</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#host)
-### 3. DNS Enumeration
-  * [<ins>dnsrecon</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#dnsrecon)
-  * [<ins>fierce</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#fierce)
+### - DNS Enumeration
+- [ ] [<ins>dnsrecon</ins>]()
+- [ ] [<ins>fierce</ins>]()
+- [ ] [<ins>dsnenum</ins>]()
+- [ ] [<ins>dig</ins>]()
+- [ ] [<ins>host</ins>]()
+
+
+
 ### 4. Web Application Firewall
   * [<ins>wafw00f</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#wafw00f)
 ### 5. Webcrawlers
@@ -32,16 +35,38 @@
 ### Tools:  
 #### whois
     whois example.com
-#### dig
-    dig axfr @Name-servername-here example.com
-   Here axfr is the protocol and the query requests a full copy of the DNS zone from the specified DNS server.  
-#### host  
-    host example.com
-   It provides the IPs associated with the domain name  
-#### dnsrecon 
-    dnsrecon -d example.com
-#### fierce  
-    fierce --domain example.com  
+#### - dnsrecon
+    
+    ```
+    dnsrecon -d target.com
+    ```
+    
+#### - fierce
+    
+    ```
+    fierce --domain target.com
+    ```
+    
+#### - dnsenum
+    
+    ```
+    dnsenum target.com
+    ```
+    
+#### - dig
+    
+    ```
+    dig axfr @<name-server-here> example.com
+    ```
+    
+   - Here we are using the **`axfr`** protocol to zone transfer the DNS records of the target domain
+
+#### - host
+   - It helps to look for the A and AAAA records of the domain.
+    
+    ```
+    host target.com
+    ```
 #### wafw00f
     wafw00f -a example.com  
 #### gospider  
