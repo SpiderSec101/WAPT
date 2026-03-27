@@ -63,7 +63,7 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
 
-- ### User Info
+- ### Secrets
 - [ ] [theHarvester](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#theharvester)
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [trufflehog](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#trufflehog)
