@@ -129,32 +129,33 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
 ### Crawlers
 
 - [ ] gospider
-
-```bash
-gospider -s https://linked.com -w -d 0
-```
-- `-d` is used for the depth control, set to 0 for infinite recurse and default set to 1
-- `-w` is for adding the subdomains inscope
+    
+    ```bash
+    gospider -s https://linked.com -w -d 0
+    ```
+    - `-d` is used for the depth control, set to 0 for infinite recurse and default set to 1
+    - `-w` is for adding the subdomains inscope
       
 - [ ] hakrawler
 
-```bash
-echo https://target.com | hakrawler -subs -d 3
-```
+    ```bash
+    echo https://target.com | hakrawler -subs -d 3
+    ```
 
 - [ ] katana
 
-  - [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)
+    - [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)
+    
+    ```bash
+    go install github.com/projectdiscovery/katana/cmd/katana@latest
+    ```
 
-```bash
-go install github.com/projectdiscovery/katana/cmd/katana@latest
-```
-
-```bash
-katana -u https://tesla.com -H "header" -d 10 -jsl -jc 
-```
-  - `-jsl` is used for  Javascript link extaction
-  - `-jc` is used to enable the Javasdcript crawling
+    ```bash
+    katana -u https://tesla.com -H "header" -d 10 -jsl -jc 
+    ```
+    
+    - `-jsl` is used for  Javascript link extaction
+    - `-jc` is used to enable the Javasdcript crawling
 
 
 
