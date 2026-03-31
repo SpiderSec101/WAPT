@@ -12,9 +12,12 @@
 - ### [Parameter Fuzzing]()
 - [ ] Arjun
 - [ ] x8
-- ### [URls and Endpoints]()
-- [ ] Crawlers
-- [ ] JS Analysis 
+- ### [Crawlers]()
+- [ ] gospider
+- [ ] hakrawler
+- [ ] katana
+- ### JS Scraping
+- ### Waymore
 - ### [Network Scan]()
 - [ ] naabu
 - [ ] nmap
@@ -102,7 +105,7 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
     
     - Arjun can find query parameters for URL endpoints.
     
-    - (https://github.com/s0md3v/Arjun)[https://github.com/s0md3v/Arjun]
+    - [https://github.com/s0md3v/Arjun](https://github.com/s0md3v/Arjun)
     
     ```bash
     arjun -u http://example.com/user/profile --headers "Cookie: cookie-here" -t 100 -d 1000
@@ -114,7 +117,7 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
   
 - [ ] x8
     
-    - (https://github.com/Sh1Yo/x8)[https://github.com/Sh1Yo/x8]
+    - [https://github.com/Sh1Yo/x8](https://github.com/Sh1Yo/x8)
     
     ```bash
     x8 -u http://url1.com http://url2.com -w <wordlist> -X GET -H "Cookie: cookie-here" -d 1000
@@ -123,10 +126,35 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
     - `-d` is used for delay between two requests
 
 
+- ### Crawlers
 
+- [ ] gospider
 
+```bash
+gospider -s https://linked.com -w -d 0
+```
+- `-d` is used for the depth control, set to 0 for infinite recurse and default set to 1
+- `-w` is for adding the subdomains inscope
+      
+- [ ] hakrawler
 
+```bash
+echo https://target.com | hakrawler -subs -d 3
+```
 
+- [ ] katana
+
+  - [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)
+
+```bash
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+```
+
+```bash
+katana -u https://tesla.com -H "header" -d 10 -jsl -jc 
+```
+  - `-jsl` is used for  Javascript link extaction
+  - `-jc` is used to enable the Javasdcript crawling
 
 
 
