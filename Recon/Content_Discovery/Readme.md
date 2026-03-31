@@ -75,7 +75,7 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
 - [ ] ffuf
     
     ```bash
-    ffuf -w /path/to/wordlists:FUZZ -u http://target.com -e .php -H "Host: FUZZ.target.com" -mc all -fc 400 -fs 162
+    ffuf -w /path/to/wordlists:FUZZ -u http://target.com/FUZZ -e .php,.js,.html -H "Cookie: session-cookie-here" -mc all
     ```
   
 - [ ] gobuster
@@ -96,6 +96,61 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
     feroxbuster -u http://target.com -w <wordlist> -x pdf,php,txt -r -d 2 -H "Cookie: cookie-here"
     ```
     
+- ### Parameter Fuzzing
+
+- [ ] Arjun
+    
+    - Arjun can find query parameters for URL endpoints.
+    
+    - (https://github.com/s0md3v/Arjun)[https://github.com/s0md3v/Arjun]
+    
+    ```bash
+    arjun -u http://example.com/user/profile --headers "Cookie: cookie-here" -t 100 -d 1000
+    ```
+    
+    - `-t` for threads
+    - `-d` for delay between two requests
+    - `-i` to scan all the endpoints from a list of targets
+  
+- [ ] x8
+    
+    - (https://github.com/Sh1Yo/x8)[https://github.com/Sh1Yo/x8]
+    
+    ```bash
+    x8 -u http://url1.com http://url2.com -w <wordlist> -X GET -H "Cookie: cookie-here" -d 1000
+    ```
+
+    - `-d` is used for delay between two requests
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
