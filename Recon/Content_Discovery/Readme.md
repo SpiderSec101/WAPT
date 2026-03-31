@@ -1,15 +1,32 @@
 - ### [Wordlists]()
 - ### [Subdomain Bruteforcing]()
+- [ ] sublister
+- [ ] dnsenum
+- [ ] ffuf
+- [ ] gobuster
 - ### [Directory Bruteforcing]()
+- [ ] Dirsearch
+- [ ] ffuf
+- [ ] gobuster
+- [ ] feroxbuster
 - ### [Parameter Fuzzing]()
+- [ ] Arjun
+- [ ] x8
 - ### [URls and Endpoints]()
+- [ ] Crawlers
+- [ ] JS Analysis 
 - ### [Network Scan]()
+- [ ] naabu
+- [ ] nmap
+- [ ] rustscan 
 - ### [Automated Analysis]()
+- nuclei
+- Burpsuite Active Scan 
 - ### [Manual Analysis]()
 
 --- 
 
-- #### Wordlists
+- ### Wordlists
 - [ ] Subdomain Enumeration
   - [Jhaddix-all.tx](https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt)
 - [ ] Directory and Subdomains
@@ -29,7 +46,7 @@
   - [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 
 
-- #### Subdomain Bruteforcing 
+- ### Subdomain Bruteforcing 
 
 - [ ] sublist3r
 ```bash
@@ -53,14 +70,32 @@ ffuf -u https://example.com -H 'HOST: FUZZ.example.com' -w /usr/share/wordlists/
 ```bash
 gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
 ```
+- ### Directory Bruteforcing 
 
-
-
-
-
-
-
-
+- [ ] ffuf
+    
+    ```bash
+    ffuf -w /path/to/wordlists:FUZZ -u http://target.com -e .php -H "Host: FUZZ.target.com" -mc all -fc 400 -fs 162
+    ```
+  
+- [ ] gobuster
+    
+    ```bash
+    gobuster dir -w /usr/share... -u http://evil.com -x .php,.txt -H "User-Agent: ..." -s 200-500 -hl 162
+    ```
+    
+- [ ] dirsearch
+    
+    ```bash
+    dirsearch -u http://target.com -i 200-500 -x 404 -e php,txt -r -H "Cookie: cookie-here" --exclude-sizes=162
+    ```
+    
+- [ ] feroxbuster
+    
+    ```bash
+    feroxbuster -u http://target.com -w <wordlist> -x pdf,php,txt -r -d 2 -H "Cookie: cookie-here"
+    ```
+    
 
 
 
