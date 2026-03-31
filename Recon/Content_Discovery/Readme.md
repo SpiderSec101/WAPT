@@ -52,27 +52,28 @@
 ### Subdomain Bruteforcing 
 
 - [ ] sublist3r
-```bash
-sudo apt install sublist3r 
-sublist3r -b -d tesla.com -o domains.txt
-```
+    ```bash
+    sudo apt install sublist3r 
+    sublist3r -b -d tesla.com -o domains.txt
+    ```
+    
 - [ ] dnsenum
-```bash
-dnsenum --enum example.com -f /usr/share/wordlists/dirb/wordlists.txt -r
-```
-- `dnsenum --enum example.com` ⇒ here we specify the domain name and use a tuning option `enum` that is used to gather as much information as the tool can.
-- `-f`  Used to specify the word list
-- `-r` is used for recursive option, if it discovers a subdomain like `auth.example.com` it will try to find the subdomain of the extracted subdomain
+    ```bash
+    dnsenum --enum example.com -f /usr/share/wordlists/dirb/wordlists.txt -r
+    ```
+    - `dnsenum --enum example.com` ⇒ here we specify the domain name and use a tuning option `enum` that is used to gather as much information as the tool can.
+    - `-f`  Used to specify the word list
+    - `-r` is used for recursive option, if it discovers a subdomain like `auth.example.com` it will try to find the subdomain of the extracted subdomain
 
 - [ ] ffuf
-```bash
-ffuf -u https://example.com -H 'HOST: FUZZ.example.com' -w /usr/share/wordlists/.....
-
-```
+    ```bash
+    ffuf -u https://example.com -H 'HOST: FUZZ.example.com' -w /usr/share/wordlists/.....
+    ```
+    
 - [ ] gobuster
-```bash
-gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
-```
+    ```bash
+    gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
+    ```
 ### Directory Bruteforcing 
 
 - [ ] ffuf
@@ -159,7 +160,74 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
 
 
 
+### JS Scraping 
 
+- [ ] LinkFinder
+
+    - [https://github.com/GerbenJavado/LinkFinder](https://github.com/GerbenJavado/LinkFinder)
+    
+    ```bash
+    python3 linkfidner.py -i https://linkedin.com -d -c "sessionid=oe79rcyno734t8y7"
+    ```
+
+- [ ] Subdomainizer
+
+    - [https://github.com/nsonaniya2010/SubDomainizer](https://github.com/nsonaniya2010/SubDomainizer)
+    
+    ```bash
+    python3 SubDomainizer.py -h
+    python3 SubDomainizer.py -u https://linkedin.com 
+    ```
+
+    - To use it with the github token
+    
+    ```bash
+    python3 SubDomainizer.py -u https://linkedin.com -o outputfile.txt -gt github_token_here -g
+    ```
+
+    - To use with cookie
+    
+    ```bash
+    python3 SubDomainizer.py -u https://www.example.com -c "test=1; test=2"
+    ```
+
+- [ ] Burp Gap
+
+    - This Burpsuite Extension is used to gather endpoints, URLs, parameters, names
+    
+    - [https://github.com/xnl-h4ck3r/GAP-Burp-Extension](https://github.com/xnl-h4ck3r/GAP-Burp-Extension)
+
+- [ ] JSMiner
+
+    - This Burp Extension is used to extract hard coded info from the JS it self
+    
+    ![image.png](attachment:1f55dc64-4a52-42ad-a036-922248e917ad:image.png)
+
+- [ ] JS Finder
+    
+    - [https://github.com/kacakb/jsfinder?tab=readme-ov-file](https://github.com/kacakb/jsfinder?tab=readme-ov-file)
+        
+    - Reading URLs from the JS files
+        
+    ```bash
+    echo http://target.com | jsfinder -read -s -o out.txt 
+    ```
+    
+    ```bash
+    jsfinder -l list.txt -read -s -o out.txt
+    ```
+    
+- [ ] Secret Finder
+    
+    - [https://github.com/m4ll0k/SecretFinder](https://github.com/m4ll0k/SecretFinder)
+        
+    ```bash
+    python3 SecretFinder.py -i http://target.com -e -H "Cookie: cookie-here" -o cli
+    ```
+    
+    - `-o` used to specify the output method
+        -- cli
+        -- results.html
 
 
 
