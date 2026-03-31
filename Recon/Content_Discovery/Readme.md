@@ -17,6 +17,12 @@
 - [ ] hakrawler
 - [ ] katana
 - ### JS Scraping
+- [ ] Linkfinder
+- [ ] SubDomainizer
+- [ ] Burp GAP Extension
+- [ ] JS Miner
+- [ ] JS Finder
+- [ ] Secret Finder
 - ### Waymore
 - ### [Network Scan]()
 - [ ] naabu
@@ -200,8 +206,6 @@
 - [ ] JSMiner
 
     - This Burp Extension is used to extract hard coded info from the JS it self
-    
-    ![image.png](attachment:1f55dc64-4a52-42ad-a036-922248e917ad:image.png)
 
 - [ ] JS Finder
     
@@ -226,8 +230,8 @@
     ```
     
     - `-o` used to specify the output method
-        -- cli
-        -- results.html
+    - cli
+    - results.html
 
 
 
