@@ -29,7 +29,7 @@
 
 --- 
 
-- ### Wordlists
+### Wordlists
 - [ ] Subdomain Enumeration
   - [Jhaddix-all.tx](https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt)
 - [ ] Directory and Subdomains
@@ -49,7 +49,7 @@
   - [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 
 
-- ### Subdomain Bruteforcing 
+### Subdomain Bruteforcing 
 
 - [ ] sublist3r
 ```bash
@@ -73,7 +73,7 @@ ffuf -u https://example.com -H 'HOST: FUZZ.example.com' -w /usr/share/wordlists/
 ```bash
 gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
 ```
-- ### Directory Bruteforcing 
+### Directory Bruteforcing 
 
 - [ ] ffuf
     
@@ -99,7 +99,7 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
     feroxbuster -u http://target.com -w <wordlist> -x pdf,php,txt -r -d 2 -H "Cookie: cookie-here"
     ```
     
-- ### Parameter Fuzzing
+### Parameter Fuzzing
 
 - [ ] Arjun
     
@@ -126,7 +126,7 @@ gobuster vhost -w /usr/share/wordlists/SecLists/... -u https://example.com -t 10
     - `-d` is used for delay between two requests
 
 
-- ### Crawlers
+### Crawlers
 
 - [ ] gospider
 
