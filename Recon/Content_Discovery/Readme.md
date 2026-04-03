@@ -35,8 +35,13 @@
 - [ ] masscan
 - [ ] dnsmasscan
 - ### [Automated Analysis]()
-- nuclei
-- Burpsuite Active Scan 
+- [ ] nuclei
+- [ ] retirejs
+- [ ] opengrep
+- [ ] metasec.js
+- [ ] Burpsuite Active Scan
+- [ ] AI Scanning
+
 - ### [Manual Analysis]()
 
 --- 
@@ -338,7 +343,54 @@
     ```    
 
 
+### Automated Analysis 
 
+- [ ] nuclei
+
+    - [https://github.com/projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)
+    
+    ```bash
+    nuclei -u target.com -fr -headless
+    ```
+    - **`-fr`** ⇒ Used for following redirects 
+    - **`-headless`** ⇒ Used for headless mode which will enable templates that require headless browser support.
+     
+    - Scanning a directory of source code
+
+    ```bash
+    nuclei -u ./bank-application -file
+    ```
+
+- [ ] retirejs
+
+    - [https://github.com/RetireJS/retire.js](https://github.com/RetireJS/retire.js)
+    
+    - This tool is used to scan the **`JS libraries`** for previously discovered **`CVEs`**
+    - You can automatically scan for vulns in JavaScript libraries used by applications.
+    - Burpsuite Extension
+    - rowser Extension
+
+- [ ] opengrep
+
+    - This tool is used for static application scanning like source code review 
+    - [https://github.com/opengrep/opengrep](https://github.com/opengrep/opengrep)
+    
+    - [https://github.com/opengrep/opengrep-rules](https://github.com/opengrep/opengrep-rules)
+    
+    ```bash
+    opengrep scan -f /path/to/rules/language /path/to/target/directory
+    ```
+
+- [ ] metasec.js
+
+    - [https://github.com/LewisArdern/metasecjs](https://github.com/LewisArdern/metasecjs)
+
+- [ ] Burpsuite Active Scan
+    - Scan a target
+    - Scan a request
+    - Scan a parameter
+     
+- [ ] AI - Strix
 
 
 
