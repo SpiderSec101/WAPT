@@ -23,13 +23,17 @@
 - [ ] JS Miner
 - [ ] JS Finder
 - [ ] Secret Finder
+- ### [Paths]()
+- [ ] Known Paths
+- [ ] APK Leaks 
 - ### [Wayback Archive]()
 - [ ] waymore
 - [ ] xnLinkFinder
 - ### [Network Scan]()
 - [ ] naabu
 - [ ] nmap
-- [ ] rustscan 
+- [ ] masscan
+- [ ] dnsmasscan
 - ### [Automated Analysis]()
 - nuclei
 - Burpsuite Active Scan 
@@ -236,6 +240,30 @@
     - results.html
 
 
+### Paths 
+
+- [ ] Known Paths
+    - If the software is available then one can install it and extract the known paths using the Daniel Miller’s **`Source2URL`** bash script
+    
+    [https://github.com/danielmiessler/Source2URL/blob/master/Source2URL](https://github.com/danielmiessler/Source2URL/blob/master/Source2URL)
+    
+    - It is a bash script that helps to extract the URLs from a source code directory
+    - It then makes HTTP requests to each path via a configured proxy (BurpSuite)
+    
+    ```bash
+    ./Source2URL ~/downloads/wordpress wordpress 127.0.0.1:8080 example.com
+    ```
+
+- [ ] APK Leaks
+
+    - [https://github.com/dwisiswant0/apkleaks](https://github.com/dwisiswant0/apkleaks)
+    - The application we are testing might have some of the mobile application and the mobile application can have some API calls that the web application is not using.
+    - This tool helps to find out the low hanging URLs from the APK itself
+    
+    ```bash
+    apkleaks -f /source/app.apk -o out,txt
+    ```
+
 
 ### Wayback Archive 
 
@@ -308,6 +336,78 @@
     ```bash
     nmap -sV -Pn -iL scan-results.gnmap -oG nmap-results.gnmap
     ```    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
