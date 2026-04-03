@@ -16,14 +16,16 @@
 - [ ] gospider
 - [ ] hakrawler
 - [ ] katana
-- ### JS Scraping
+- ### [JS Scraping]()
 - [ ] Linkfinder
 - [ ] SubDomainizer
 - [ ] Burp GAP Extension
 - [ ] JS Miner
 - [ ] JS Finder
 - [ ] Secret Finder
-- ### Waymore
+- ### [Wayback Archive]()
+- [ ] waymore
+- [ ] xnLinkFinder
 - ### [Network Scan]()
 - [ ] naabu
 - [ ] nmap
@@ -235,12 +237,77 @@
 
 
 
+### Wayback Archive 
+
+- [ ] waymore
+    
+    - [https://github.com/xnl-h4ck3r/waymore](https://github.com/xnl-h4ck3r/waymore)
+
+    ```bash
+    pip install waymore
+    ```
+    
+    ```bash
+    waymore -i target.com -mode B
+    ```
+
+- [ ] xnLInkFinder
+    
+    - [https://github.com/xnl-h4ck3r/xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder)
+
+    ```bash
+    python3 xnLinkFinder.py -i ~/directory/to/xml/files -sp https://www.target.com -sf target.com -o output.txt
+    ```
 
 
+### Network Scan 
+- [ ] naabu
+    
+    ```bash
+      naabu -host 10.10.10.10 -p 1-65000    
+    ```  
+    
+- [ ] nmap
 
+    ```bash
+      nmap -A -sV -sC -T3 -oA nmap/results -p 22,80,443 10.10.10.10
+    ```  
+      
+- [ ] massscan
 
+    - This is an Internet-scale **`port scanner`**. It can scan the entire Internet in under 5 minutes, transmitting 10 million packets per second, from a single machine.
+    
+    - [https://github.com/robertdavidgraham/masscan](https://github.com/robertdavidgraham/masscan)
+    
+    ```bash
+    masscan --nmap
+    ```
+    
+    ```bash
+    masscan -p80,1000-2000 -Pn -iL <input_file> -oL outputfile.txt --max-rate <number>
+    ```
+    
+    - Output File Formats
+    
+    - `-oG`  →  for saving the output in the gnmap format
+    - `-oL`  →  In text format
+    - `-oX`  →  In XML format
 
+- [ ] dnmasscan
 
+    - dnmasscan is a bash script to automate resolving a file of domain names and subsequentlly scanning them using masscan.
+    
+    - As masscan does not accept domain names, a file is created (specified in the second argument to the script) which will log which IP addresses resolve to which domain names for cross reference after the script has finished executing.
+    
+    - [https://github.com/rastating/dnmasscan](https://github.com/rastating/dnmasscan)
+    
+    ```bash
+    dnmasscan domains.txt ips.txt -p80,443,1000-2000 -Pn -oG scan-results.gnmap --max-rate 1800
+    ```
+    - After the port analysis the output `gnmap` file format data is fed to the **`nmap`** service scan
+    ```bash
+    nmap -sV -Pn -iL scan-results.gnmap -oG nmap-results.gnmap
+    ```    
 
 
 
