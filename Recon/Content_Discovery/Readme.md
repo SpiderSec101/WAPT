@@ -40,9 +40,12 @@
 - [ ] opengrep
 - [ ] metasec.js
 - [ ] Burpsuite Active Scan
-- [ ] AI Scanning
 
 - ### [Manual Analysis]()
+- [ ] Manual Crawling 
+- [ ] Questions
+- [ ] Modules and Submodules
+- [ ] Testcases
 
 --- 
 
@@ -390,10 +393,39 @@
     - Scan a request
     - Scan a parameter
      
-- [ ] AI - Strix
 
 
+### Manual Analysis 
 
+- #### Questions
+  
+- [ ] How the client and the server interacts
+  - Reverse Proxies
+  - CDN
+  - Firewalls
+  - Load Balancers
+  - Virtual Host
+- [ ] How does the app pass data
+  - Body (x-www-urlencoded / multipart-formdata / json)
+  - URL (Traditional / RESTful format)
+- [ ] Where and how does the app talk about users
+  - Authentication and Authorization
+  - Where (Tokens / Cookies / API Calls)
+  - How (UID / email / username)
+- [ ] Multitenancy and User levels
+  - Multitenancy (customer / normal user / employee)
+  - User Levels (user / admin)
+- [ ] A unique Threat Model (CIA)
+- [ ] Past security researches, previously discovered vulns
+- [ ] How the app stores data
+  - Database
+  - S3 Buckets
+  - Image Uploads
+  - Comments
+  - Profile Data
+- [ ] How the framework handles or protect itself from different vulns
+      
+- #### Testcasses
 
 
 
