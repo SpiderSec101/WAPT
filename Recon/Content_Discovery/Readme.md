@@ -1,4 +1,4 @@
-- ### [Wordlists]()
+- ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists)
 - ### [Subdomain Bruteforcing]()
 - [ ] sublister
 - [ ] dnsenum
