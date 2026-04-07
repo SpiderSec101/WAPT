@@ -1,47 +1,47 @@
 - ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists)
-- ### [Subdomain Bruteforcing]()
+- ### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing)
 - [ ] sublister
 - [ ] dnsenum
 - [ ] ffuf
 - [ ] gobuster
-- ### [Directory Bruteforcing]()
+- ### [Directory Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#directory-bruteforcing)
 - [ ] Dirsearch
 - [ ] ffuf
 - [ ] gobuster
 - [ ] feroxbuster
-- ### [Parameter Fuzzing]()
+- ### [Parameter Fuzzing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#parameter-fuzzing)
 - [ ] Arjun
 - [ ] x8
-- ### [Crawlers]()
+- ### [Crawlers](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#crawlers)
 - [ ] gospider
 - [ ] hakrawler
 - [ ] katana
-- ### [JS Scraping]()
+- ### [JS Scraping](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#js-scraping)
 - [ ] Linkfinder
 - [ ] SubDomainizer
 - [ ] Burp GAP Extension
 - [ ] JS Miner
 - [ ] JS Finder
 - [ ] Secret Finder
-- ### [Paths]()
+- ### [Paths](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#paths)
 - [ ] Known Paths
 - [ ] APK Leaks 
-- ### [Wayback Archive]()
+- ### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive)
 - [ ] waymore
 - [ ] xnLinkFinder
-- ### [Network Scan]()
+- ### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan)
 - [ ] naabu
 - [ ] nmap
 - [ ] masscan
 - [ ] dnsmasscan
-- ### [Automated Analysis]()
+- ### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis)
 - [ ] nuclei
 - [ ] retirejs
 - [ ] opengrep
 - [ ] metasec.js
 - [ ] Burpsuite Active Scan
 
-- ### [Manual Analysis]()
+- ### [Manual Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#manual-analysis)
 - [ ] Manual Crawling 
 - [ ] Questions
 - [ ] Modules and Submodules
