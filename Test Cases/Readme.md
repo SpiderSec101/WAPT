@@ -1,3 +1,7 @@
+# WAPT Tracker and Testcases
+
+- [XLSX File](https://github.com/SpiderSec101/WAPT/blob/main/Test%20Cases/WAPT-Testcases.xlsx)
+
 # Test Cases
 
 - [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-ips-user-details-parameters)
