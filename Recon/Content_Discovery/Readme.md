@@ -1,47 +1,47 @@
-- ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists)
-- ### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing)
+- ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists-1)
+- ### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing-1)
 - [ ] sublister
 - [ ] dnsenum
 - [ ] ffuf
 - [ ] gobuster
-- ### [Directory Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#directory-bruteforcing)
+- ### [Directory Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#directory-bruteforcing-1)
 - [ ] Dirsearch
 - [ ] ffuf
 - [ ] gobuster
 - [ ] feroxbuster
-- ### [Parameter Fuzzing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#parameter-fuzzing)
+- ### [Parameter Fuzzing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#parameter-fuzzing-1)
 - [ ] Arjun
 - [ ] x8
-- ### [Crawlers](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#crawlers)
+- ### [Crawlers](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#crawlers-1)
 - [ ] gospider
 - [ ] hakrawler
 - [ ] katana
-- ### [JS Scraping](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#js-scraping)
+- ### [JS Scraping](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#js-scraping-1)
 - [ ] Linkfinder
 - [ ] SubDomainizer
 - [ ] Burp GAP Extension
 - [ ] JS Miner
 - [ ] JS Finder
 - [ ] Secret Finder
-- ### [Paths](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#paths)
+- ### [Paths](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#paths-1)
 - [ ] Known Paths
 - [ ] APK Leaks 
-- ### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive)
+- ### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive-1)
 - [ ] waymore
 - [ ] xnLinkFinder
-- ### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan)
+- ### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan-1)
 - [ ] naabu
 - [ ] nmap
 - [ ] masscan
 - [ ] dnsmasscan
-- ### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis)
+- ### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis-1)
 - [ ] nuclei
 - [ ] retirejs
 - [ ] opengrep
 - [ ] metasec.js
 - [ ] Burpsuite Active Scan
 
-- ### [Manual Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#manual-analysis)
+- ### [Manual Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#manual-analysis-1)
 - [ ] Manual Crawling 
 - [ ] Questions
 - [ ] Modules and Submodules
