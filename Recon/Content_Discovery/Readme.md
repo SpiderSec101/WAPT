@@ -45,7 +45,7 @@
 - [ ] Manual Crawling 
 - [ ] Questions
 - [ ] Modules and Submodules
-- [ ] [WAPT-Testcases](https://github.com/SpiderSec101/WAPT/blob/main/Test%20Cases/WAPT-Testcases.xlsx)
+- [ ] [WAPT-Testcases](https://github.com/SpiderSec101/WAPT/raw/refs/heads/main/Test%20Cases/WAPT-Testcases.xlsx)
 
 --- 
 
