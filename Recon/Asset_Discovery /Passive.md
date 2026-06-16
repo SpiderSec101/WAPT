@@ -350,6 +350,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
       	httpx -l ss.sub-domains -ss -system-chrome -srd ./ss -threads 1 -timeout 20 -retries 1 -no-screenshot-full-page -resume
       else
       	httpx -l ss.sub-domains -ss -system-chrome -srd ../ss -threads 1 -timeout 20 -retries 1 -no-screenshot-full-page
+      fi
 
 - #### Eyewitness
   [https://github.com/RedSiege/EyeWitness](https://github.com/RedSiege/EyeWitness)
