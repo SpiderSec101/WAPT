@@ -99,7 +99,7 @@
 - [ ] ffuf
     
     ```bash
-    ffuf -w /path/to/wordlists:FUZZ -u http://target.com/FUZZ -e .php,.js,.html -H "Cookie: session-cookie-here" -mc all
+    ffuf -w /path/to/wordlists:FUZZ -u http://target.com/FUZZ -e .php,.js,.html -H "Cookie: session-cookie-here" -rate 5 -mc all
     ```
   
 - [ ] gobuster
@@ -111,13 +111,13 @@
 - [ ] dirsearch
     
     ```bash
-    dirsearch -u http://target.com -i 200-500 -x 404 -e php,txt -r -H "Cookie: cookie-here" --exclude-sizes=162
+    dirsearch -u http://target.com -i 200-500 --max-rate=5 -x 404 -e php,txt -r -H "Cookie: cookie-here" --exclude-sizes=162
     ```
     
 - [ ] feroxbuster
     
     ```bash
-    feroxbuster -u http://target.com -w <wordlist> -x pdf,php,txt -r -d 2 -H "Cookie: cookie-here"
+    feroxbuster -u http://target.com -w <wordlist> --rate-limit 5 -x pdf,php,txt -r -d 2 -H "Cookie: cookie-here"
     ```
     
 ### Parameter Fuzzing
