@@ -433,6 +433,8 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
       
       site: target.com inurl: credentials inurl: password
 
+      site:example[.]com ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess | ext:json
+
 
     
 
