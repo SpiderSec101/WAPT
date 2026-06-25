@@ -117,7 +117,7 @@
 - [ ] feroxbuster
     
     ```bash
-    feroxbuster -u http://target.com -w <wordlist> --rate-limit 5 -x pdf,php,txt -r -d 2 -H "Cookie: cookie-here"
+    feroxbuster -u http://target.com -w <wordlist> --rate-limit 5 -x pdf,php,txt -r -d 2 -H "Cookie: cookie-here" -C 404 -C 403
     ```
     
 ### Parameter Fuzzing
