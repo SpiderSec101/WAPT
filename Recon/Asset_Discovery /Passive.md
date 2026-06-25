@@ -208,7 +208,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
        Improve you recon by searching endpoints on GitHub. Very useful, you can also get some extras subdomains. Relative urls can be displayed or not as well as external domains urls. Based on regexp, it also has an exclude list. Feed it as much as you can to filter the results the way you like!
 
-           python3 github-endpoints.py -d target-website.com -s -r
+           python3 github-endpoints.py -d target-website.com -s -r -t <github-token-here>
 
      * github-secrets
 
