@@ -172,7 +172,7 @@
     ```
 
     ```bash
-    katana -u https://tesla.com -H "header" -d 10 -jsl -jc 
+    katana -u https://tesla.com -H "header" -rl 5 -d 10 -jsl -jc -o katana.txt
     ```
     
     - `-jsl` is used for  Javascript link extaction
