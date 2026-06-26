@@ -351,6 +351,8 @@
 - [ ] nuclei
 
     - [https://github.com/projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)
+
+          go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
     
     ```bash
     nuclei -u target.com -fr -headless
