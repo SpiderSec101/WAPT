@@ -291,10 +291,10 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
     * [Docs](https://www.hahwul.com/blog/2020/amass-go-deep-in-the-sea-with-free-apis/)
     * Setup the config file 
 
-          amass enum -d target.com
+          amass enum -d target.com -timeout 15
     * Or
 
-          sudo docker run --rm -it caffix/amass enum -d target.com
+          sudo docker run --rm -it caffix/amass enum -d target.com -timeout 15
 
 - #### bbot
 
