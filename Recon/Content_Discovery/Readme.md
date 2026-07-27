@@ -1,21 +1,40 @@
+- ### [Paths](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#paths-1)
+- [ ] Known Paths
+- [ ] APK Leaks 
+
+- ### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive-1)
+- [ ] waymore
+- [ ] xnLinkFinder
+
+- ### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan-1)
+- [ ] naabu
+- [ ] nmap
+- [ ] masscan
+- [ ] dnsmasscan
+
 - ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists-1)
+
 - ### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing-1)
 - [ ] sublister
 - [ ] dnsenum
 - [ ] ffuf
 - [ ] gobuster
+
 - ### [Directory Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#directory-bruteforcing-1)
 - [ ] Dirsearch
 - [ ] ffuf
 - [ ] gobuster
 - [ ] feroxbuster
+
 - ### [Parameter Fuzzing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#parameter-fuzzing-1)
 - [ ] Arjun
 - [ ] x8
+
 - ### [Crawlers](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#crawlers-1)
 - [ ] gospider
 - [ ] hakrawler
 - [ ] katana
+
 - ### [JS Scraping](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#js-scraping-1)
 - [ ] Linkfinder
 - [ ] SubDomainizer
@@ -23,17 +42,7 @@
 - [ ] JS Miner
 - [ ] JS Finder
 - [ ] Secret Finder
-- ### [Paths](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#paths-1)
-- [ ] Known Paths
-- [ ] APK Leaks 
-- ### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive-1)
-- [ ] waymore
-- [ ] xnLinkFinder
-- ### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan-1)
-- [ ] naabu
-- [ ] nmap
-- [ ] masscan
-- [ ] dnsmasscan
+
 - ### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis-1)
 - [ ] nuclei
 - [ ] retirejs
@@ -48,6 +57,104 @@
 - [ ] [WAPT-Testcases](https://github.com/SpiderSec101/WAPT/raw/refs/heads/main/Test%20Cases/WAPT-Testcases.xlsx)
 
 --- 
+
+
+### Paths 
+
+- [ ] Known Paths
+    - If the software is available then one can install it and extract the known paths using the Daniel Miller’s **`Source2URL`** bash script
+    
+    [https://github.com/danielmiessler/Source2URL/blob/master/Source2URL](https://github.com/danielmiessler/Source2URL/blob/master/Source2URL)
+    
+    - It is a bash script that helps to extract the URLs from a source code directory
+    - It then makes HTTP requests to each path via a configured proxy (BurpSuite)
+    
+    ```bash
+    ./Source2URL ~/downloads/wordpress wordpress 127.0.0.1:8080 example.com
+    ```
+
+- [ ] APK Leaks
+
+    - [https://github.com/dwisiswant0/apkleaks](https://github.com/dwisiswant0/apkleaks)
+    - The application we are testing might have some of the mobile application and the mobile application can have some API calls that the web application is not using.
+    - This tool helps to find out the low hanging URLs from the APK itself
+    
+    ```bash
+    apkleaks -f /source/app.apk -o out,txt
+    ```
+
+
+### Wayback Archive 
+
+- [ ] waymore
+    
+    - [https://github.com/xnl-h4ck3r/waymore](https://github.com/xnl-h4ck3r/waymore)
+
+    ```bash
+    pip install waymore
+    ```
+    
+    ```bash
+    waymore -i target.com -mode B
+    ```
+
+- [ ] xnLInkFinder
+    
+    - [https://github.com/xnl-h4ck3r/xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder)
+
+    ```bash
+    python3 xnLinkFinder.py -i ~/directory/to/xml/files -sp https://www.target.com -sf target.com -o output.txt
+    ```
+
+
+### Network Scan 
+- [ ] naabu
+    
+    ```bash
+      naabu -host 10.10.10.10 -p 1-65000    
+    ```  
+    
+- [ ] nmap
+
+    ```bash
+      nmap -A -sV -sC -T3 -oA nmap/results -p 22,80,443 10.10.10.10
+    ```  
+      
+- [ ] massscan
+
+    - This is an Internet-scale **`port scanner`**. It can scan the entire Internet in under 5 minutes, transmitting 10 million packets per second, from a single machine.
+    
+    - [https://github.com/robertdavidgraham/masscan](https://github.com/robertdavidgraham/masscan)
+    
+    ```bash
+    masscan --nmap
+    ```
+    
+    ```bash
+    masscan -p80,1000-2000 -Pn -iL <input_file> -oL outputfile.txt --max-rate <number>
+    ```
+    
+    - Output File Formats
+    
+    - `-oG`  →  for saving the output in the gnmap format
+    - `-oL`  →  In text format
+    - `-oX`  →  In XML format
+
+- [ ] dnmasscan
+
+    - dnmasscan is a bash script to automate resolving a file of domain names and subsequentlly scanning them using masscan.
+    
+    - As masscan does not accept domain names, a file is created (specified in the second argument to the script) which will log which IP addresses resolve to which domain names for cross reference after the script has finished executing.
+    
+    - [https://github.com/rastating/dnmasscan](https://github.com/rastating/dnmasscan)
+    
+    ```bash
+    dnmasscan domains.txt ips.txt -p80,443,1000-2000 -Pn -oG scan-results.gnmap --max-rate 1800
+    ```
+    - After the port analysis the output `gnmap` file format data is fed to the **`nmap`** service scan
+    ```bash
+    nmap -sV -Pn -iL scan-results.gnmap -oG nmap-results.gnmap
+    ```    
 
 ### Wordlists
 - [ ] Subdomain Enumeration
@@ -246,104 +353,6 @@
     - `-o` used to specify the output method
     - cli
     - results.html
-
-
-### Paths 
-
-- [ ] Known Paths
-    - If the software is available then one can install it and extract the known paths using the Daniel Miller’s **`Source2URL`** bash script
-    
-    [https://github.com/danielmiessler/Source2URL/blob/master/Source2URL](https://github.com/danielmiessler/Source2URL/blob/master/Source2URL)
-    
-    - It is a bash script that helps to extract the URLs from a source code directory
-    - It then makes HTTP requests to each path via a configured proxy (BurpSuite)
-    
-    ```bash
-    ./Source2URL ~/downloads/wordpress wordpress 127.0.0.1:8080 example.com
-    ```
-
-- [ ] APK Leaks
-
-    - [https://github.com/dwisiswant0/apkleaks](https://github.com/dwisiswant0/apkleaks)
-    - The application we are testing might have some of the mobile application and the mobile application can have some API calls that the web application is not using.
-    - This tool helps to find out the low hanging URLs from the APK itself
-    
-    ```bash
-    apkleaks -f /source/app.apk -o out,txt
-    ```
-
-
-### Wayback Archive 
-
-- [ ] waymore
-    
-    - [https://github.com/xnl-h4ck3r/waymore](https://github.com/xnl-h4ck3r/waymore)
-
-    ```bash
-    pip install waymore
-    ```
-    
-    ```bash
-    waymore -i target.com -mode B
-    ```
-
-- [ ] xnLInkFinder
-    
-    - [https://github.com/xnl-h4ck3r/xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder)
-
-    ```bash
-    python3 xnLinkFinder.py -i ~/directory/to/xml/files -sp https://www.target.com -sf target.com -o output.txt
-    ```
-
-
-### Network Scan 
-- [ ] naabu
-    
-    ```bash
-      naabu -host 10.10.10.10 -p 1-65000    
-    ```  
-    
-- [ ] nmap
-
-    ```bash
-      nmap -A -sV -sC -T3 -oA nmap/results -p 22,80,443 10.10.10.10
-    ```  
-      
-- [ ] massscan
-
-    - This is an Internet-scale **`port scanner`**. It can scan the entire Internet in under 5 minutes, transmitting 10 million packets per second, from a single machine.
-    
-    - [https://github.com/robertdavidgraham/masscan](https://github.com/robertdavidgraham/masscan)
-    
-    ```bash
-    masscan --nmap
-    ```
-    
-    ```bash
-    masscan -p80,1000-2000 -Pn -iL <input_file> -oL outputfile.txt --max-rate <number>
-    ```
-    
-    - Output File Formats
-    
-    - `-oG`  →  for saving the output in the gnmap format
-    - `-oL`  →  In text format
-    - `-oX`  →  In XML format
-
-- [ ] dnmasscan
-
-    - dnmasscan is a bash script to automate resolving a file of domain names and subsequentlly scanning them using masscan.
-    
-    - As masscan does not accept domain names, a file is created (specified in the second argument to the script) which will log which IP addresses resolve to which domain names for cross reference after the script has finished executing.
-    
-    - [https://github.com/rastating/dnmasscan](https://github.com/rastating/dnmasscan)
-    
-    ```bash
-    dnmasscan domains.txt ips.txt -p80,443,1000-2000 -Pn -oG scan-results.gnmap --max-rate 1800
-    ```
-    - After the port analysis the output `gnmap` file format data is fed to the **`nmap`** service scan
-    ```bash
-    nmap -sV -Pn -iL scan-results.gnmap -oG nmap-results.gnmap
-    ```    
 
 
 ### Automated Analysis 
