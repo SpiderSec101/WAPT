@@ -364,8 +364,9 @@
           go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
     
     ```bash
-    nuclei -u target.com -fr -headless
+    nuclei -u target.com -fr -headless -rl 5
     ```
+    - **`-rl`** is used to set the rate limit i.e. maximum number of requests per second
     - **`-fr`** ⇒ Used for following redirects 
     - **`-headless`** ⇒ Used for headless mode which will enable templates that require headless browser support.
      
