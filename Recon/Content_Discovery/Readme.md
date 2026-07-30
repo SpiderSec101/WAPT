@@ -236,11 +236,11 @@
     - [https://github.com/s0md3v/Arjun](https://github.com/s0md3v/Arjun)
     
     ```bash
-    arjun -u http://example.com/user/profile --headers "Cookie: cookie-here" -t 100 -d 1000
+    arjun -u http://example.com/user/profile --headers "Cookie: cookie-here" -t 3 --rate-limit 5
     ```
     
     - `-t` for threads
-    - `-d` for delay between two requests
+    - `--rate-limit 5` maximum 5 requests per second 
     - `-i` to scan all the endpoints from a list of targets
   
 - [ ] x8
