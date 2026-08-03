@@ -33,7 +33,7 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 ### Ad/Analytics Tracker Code
 - [ ] [getrelationship.py](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytic-tracker)
 
-## Scanning
+### Scanning
 - [ ] [amass enum](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
 - [ ] [BBOT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bbot)
 
