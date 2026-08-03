@@ -48,10 +48,10 @@
 
 ### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis-1)
 
-- [ ] Burpsuite Active Scan
-      - Scan a target
-      - Scan a request
-      - Scan a parameter
+- [ ] BurpSuite Active Scan
+  - Scan a Target
+  - Scan a Request
+  - Scan an Input Parameter
 - [ ] nuclei
 - [ ] retirejs
 - [ ] opengrep
@@ -59,6 +59,9 @@
 - [ ] Semgrep
 - [ ] CodeQL
 - [ ] AI Agents
+  - strix [https://github.com/usestrix/strix](https://github.com/usestrix/strix)
+  - OpenClaw
+  - Hermes
 
 ### [Manual Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#manual-analysis-1)
 - [ ] Manual Crawling : Sitemap
