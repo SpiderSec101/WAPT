@@ -1,0 +1,44 @@
+- [ ] Authentication
+  - Forced Browsing 
+  - Weak credentials
+  - By-default credentials
+  - Lac of Ratelimiting
+  - Ratelimiting Bypasses
+  - No Account Locking
+  - Hardcoded Credentials in Source Code
+  - Username Enumeration
+  - Weak Cryptogaphy Implemented in Authentication
+  - Weak Password Hash Algorithm
+  - Weak Password Policy
+  - Whether MFA enabled
+  - Forgot password features
+  - Change password to the existing password
+- [ ] HTTP Headers
+  - Missing Security Headers
+  - Weakly configured security headers
+- [ ] HTTP and HTTPs 
+  - SSL / TLS issues (https://github.com/testssl/testssl.sh)
+  - HTTPs not enabed
+  - HTTPs not enforced
+  - HTTP/2 is not enforced 
+- [ ] Session
+  - Parallel Sessions Allowed 
+  - Session valid after logging out
+  - No logout functionality
+  - Session token present in URL
+  - Session ID can be predicted
+  - Session Fixation
+- [ ] Vulnerable Libraries
+- [ ] Transmitting specific data in plain text
+- [ ] Server Banner Information Disclosed
+- [ ] Unnecessarily exposed features and data 
+- [ ] Misconfiguration in mailing systems
+- [ ] Application sends information to 3rd party domains
+- [ ] Bypassing client side user input validation
+- [ ] Sensitive metadata in downloadable files
+- [ ] Exposing API keys in client side code
+- [ ] Overflows
+- [ ] No user input limit
+- [ ] Client side DoS attacks
+- [ ] APK application exposes API keys and endpoints
+- [ ] Business or Company Specific Flaws
