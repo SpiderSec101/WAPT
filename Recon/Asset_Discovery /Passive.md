@@ -33,53 +33,53 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 ## Ad/Analytics Tracker Code
 - [ ] [getrelationship.py](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytic-tracker)
 
-- ### Scanning
+## Scanning
 - [ ] [amass enum](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
 - [ ] [BBOT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bbot)
 
-- ### Subfinder
+## Subfinder
 - [ ] [>>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subfinder)
 
-- ### Passive Subdomain Bruteforcing
+## Passive Subdomain Bruteforcing
 - [ ] [puredns](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#puredns)
 - [ ] [shuffledns](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#shuffledns)
 - [ ] [amass](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass)
 
 
-- ### Live Subdomains
+## Live Subdomains
 - [ ] [httprobe](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httprobe)
 - [ ] [httpx](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httpx)
 
-- ### Permuted Scanning
+## Permuted Scanning
 - [ ] [dnsgen](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#dnsgen)
 
-- ### Screenshots
+## Screenshots
 - [ ] [httpx](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httpx-ss)
 - [ ] [Eyewitness](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#eyewitness)
 - [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
-- ### TLDs 
+## TLDs 
 - [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
 
-- ### Secrets
+## Secrets
 - [ ] [theHarvester](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#theharvester)
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [trufflehog](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#trufflehog)
 
-- ### Tech Profiling
+## Tech Profiling
 - [ ] Wappalyzer
 - [ ] Builtwith
 - [ ] Whatruns
 - [ ] [WAF](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#wafw00f)
 - [ ] [Cloning](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httrack)
 
-- ### Dorking
+## Dorking
 - [ ] [Google](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorks)
 - [ ] [Github](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-dorks)
 
-- ### Others
+## Others
 - [ ] [whoxy](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#whoxy)
 - [ ] [SubreconGPT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subrecongpt)
 - [ ] [dnsdumpster.com](https://dnsdumpster.com)
