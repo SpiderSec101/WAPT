@@ -2,10 +2,6 @@
 - [ ] Known Paths
 - [ ] APK Leaks 
 
-### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive-1)
-- [ ] waymore
-- [ ] xnLinkFinder
-
 ### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan-1)
 - [ ] naabu
 - [ ] nmap
@@ -82,30 +78,6 @@
     ```bash
     apkleaks -f /source/app.apk -o out,txt
     ```
-
-
-### Wayback Archive 
-
-- [ ] waymore
-    
-    - [https://github.com/xnl-h4ck3r/waymore](https://github.com/xnl-h4ck3r/waymore)
-
-    ```bash
-    pip install waymore
-    ```
-    
-    ```bash
-    waymore -i target.com -mode U -c /path/to/config.yml -oU waymore_urls.txt
-    ```
-
-- [ ] xnLInkFinder
-    
-    - [https://github.com/xnl-h4ck3r/xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder)
-
-    ```bash
-    python3 xnLinkFinder.py -i ~/directory/to/xml/files -sp https://www.target.com -sf target.com -o output.txt
-    ```
-
 
 ### Network Scan 
 - [ ] naabu
