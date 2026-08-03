@@ -95,7 +95,7 @@
     ```
     
     ```bash
-    waymore -i target.com -mode B
+    waymore -i target.com -mode U -c /path/to/config.yml
     ```
 
 - [ ] xnLInkFinder
