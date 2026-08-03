@@ -68,6 +68,7 @@
 - [ ] Questions
 - [ ] Modules and Submodules
 - [ ] HTTP Requests and Responses
+- [ ] 403 Bypasses
 - [ ] [WAPT-Testcases](https://github.com/SpiderSec101/WAPT/raw/refs/heads/main/Test%20Cases/WAPT-Testcases.xlsx)
 
 --- 
