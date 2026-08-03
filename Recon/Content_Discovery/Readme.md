@@ -10,6 +10,13 @@
 
 ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists-1)
 
+### Tech Profiling
+- [ ] Wappalyzer
+- [ ] Builtwith
+- [ ] Whatruns
+- [ ] [WAF]()
+- [ ] [Cloning]()
+
 ### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing-1)
 - [ ] sublister
 - [ ] dnsenum
@@ -148,6 +155,18 @@
   - [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 
 
+
+### wafw00f
+    * It helps to fingerprint the firewalls
+
+            wafw00f https://target.com
+
+### httrack
+    * It helps to clone the wep application to the local machine
+
+            httrack https://target.com
+
+      
 ### Subdomain Bruteforcing 
 
 - [ ] sublist3r
