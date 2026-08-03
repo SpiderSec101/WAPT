@@ -3,25 +3,25 @@
 * Here I have made a list which helps me in passive recon.
 * I have metioned what we want to extract and different processes and tool to do so.
 
-## Acquisitions 
+### Acquisitions 
 - [ ] Crunchbase - [Link](https://www.crunchbase.com/)
-## ASN (Autonomous System Numbers)
+### ASN (Autonomous System Numbers)
 It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
 - [ ] [Hurricane Electric BGP Toolkit](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#hurricane-bgp-elctric-toolkit)
 - [ ] [BGP View API](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bgp-view-api)
 - [ ] [Nmap](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#nmap)
-## Seed Domains from ASN    
+### Seed Domains from ASN    
 - [ ] [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-intel)
-## Certificate Transparency
+### Certificate Transparency
 - [ ] [crt.sh](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#crtsh)
-## Shodan
+### Shodan
 - [ ] [shodan cli](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shodan)
 - [ ] [shosubgo](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#shosubgo)
 - [ ] [karma_v2](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#karma_v2)
-## Cloud Data
+### Cloud Data
 - [ ] [kaeferjaeger.gay](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Asset_Discovery%20/Passive.md#kaeferjaegergay)
 
-## Github Enumeration
+### Github Enumeration
 - [ ] [git-history](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [github-dorks](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [github-endpoints](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
@@ -30,56 +30,56 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 - [ ] [github-contributors](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 
-## Ad/Analytics Tracker Code
+### Ad/Analytics Tracker Code
 - [ ] [getrelationship.py](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#adanalytic-tracker)
 
 ## Scanning
 - [ ] [amass enum](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass-enum)
 - [ ] [BBOT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#bbot)
 
-## Subfinder
+### Subfinder
 - [ ] [>>](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subfinder)
 
-## Passive Subdomain Bruteforcing
+### Passive Subdomain Bruteforcing
 - [ ] [puredns](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#puredns)
 - [ ] [shuffledns](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#shuffledns)
 - [ ] [amass](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#amass)
 
 
-## Live Subdomains
+### Live Subdomains
 - [ ] [httprobe](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httprobe)
 - [ ] [httpx](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httpx)
 
-## Permuted Scanning
+### Permuted Scanning
 - [ ] [dnsgen](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#dnsgen)
 
-## Screenshots
+### Screenshots
 - [ ] [httpx](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httpx-ss)
 - [ ] [Eyewitness](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#eyewitness)
 - [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
-## TLDs 
+### TLDs 
 - [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
 
-## Secrets
+### Secrets
 - [ ] [theHarvester](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#theharvester)
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [trufflehog](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#trufflehog)
 
-## Tech Profiling
+### Tech Profiling
 - [ ] Wappalyzer
 - [ ] Builtwith
 - [ ] Whatruns
 - [ ] [WAF](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#wafw00f)
 - [ ] [Cloning](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httrack)
 
-## Dorking
+### Dorking
 - [ ] [Google](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorks)
 - [ ] [Github](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-dorks)
 
-## Others
+### Others
 - [ ] [whoxy](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#whoxy)
 - [ ] [SubreconGPT](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#subrecongpt)
 - [ ] [dnsdumpster.com](https://dnsdumpster.com)
