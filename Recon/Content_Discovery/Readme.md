@@ -59,7 +59,8 @@
 - [ ] Semgrep
 - [ ] CodeQL
 - [ ] AI Agents
-  - strix [https://github.com/usestrix/strix](https://github.com/usestrix/strix)
+  - strix
+    - [https://github.com/usestrix/strix](https://github.com/usestrix/strix)
   - OpenClaw
   - Hermes
 
@@ -167,21 +168,21 @@
   - [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 - [ ] Custom Wordlist
   - Cewl
-    [https://www.kali.org/tools/cewl/](https://www.kali.org/tools/cewl/)
+    - [https://www.kali.org/tools/cewl/](https://www.kali.org/tools/cewl/)
   - Burp Gap
-    [https://github.com/xnl-h4ck3r/GAP-Burp-Extension](https://github.com/xnl-h4ck3r/GAP-Burp-Extension)
+    - [https://github.com/xnl-h4ck3r/GAP-Burp-Extension](https://github.com/xnl-h4ck3r/GAP-Burp-Extension)
 
 
 
 ### wafw00f
  - It helps to fingerprint the firewalls
 
-            wafw00f https://target.com
+       wafw00f https://target.com
 
 ### httrack
   - It helps to clone the wep application to the local machine
 
-            httrack https://target.com
+        httrack https://target.com
 
       
 ### Subdomain Bruteforcing 
