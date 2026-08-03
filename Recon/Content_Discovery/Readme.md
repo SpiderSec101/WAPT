@@ -14,8 +14,8 @@
 - [ ] Wappalyzer
 - [ ] Builtwith
 - [ ] Whatruns
-- [ ] [WAF]()
-- [ ] [Cloning]()
+- [ ] [WAF](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wafw00f)
+- [ ] [Cloning](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#httrack)
 
 ### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing-1)
 - [ ] sublister
