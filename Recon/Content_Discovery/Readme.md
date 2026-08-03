@@ -1,41 +1,41 @@
-- ### [Paths](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#paths-1)
+### [Paths](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#paths-1)
 - [ ] Known Paths
 - [ ] APK Leaks 
 
-- ### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive-1)
+### [Wayback Archive](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wayback-archive-1)
 - [ ] waymore
 - [ ] xnLinkFinder
 
-- ### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan-1)
+### [Network Scan](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#network-scan-1)
 - [ ] naabu
 - [ ] nmap
 - [ ] masscan
 - [ ] dnsmasscan
 
-- ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists-1)
+### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists-1)
 
-- ### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing-1)
+### [Subdomain Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#subdomain-bruteforcing-1)
 - [ ] sublister
 - [ ] dnsenum
 - [ ] ffuf
 - [ ] gobuster
 
-- ### [Directory Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#directory-bruteforcing-1)
+### [Directory Bruteforcing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#directory-bruteforcing-1)
 - [ ] Dirsearch
 - [ ] ffuf
 - [ ] gobuster
 - [ ] feroxbuster
 
-- ### [Parameter Fuzzing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#parameter-fuzzing-1)
+### [Parameter Fuzzing](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#parameter-fuzzing-1)
 - [ ] Arjun
 - [ ] x8
 
-- ### [Crawlers](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#crawlers-1)
+### [Crawlers](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#crawlers-1)
 - [ ] gospider
 - [ ] hakrawler
 - [ ] katana
 
-- ### [JS Scraping](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#js-scraping-1)
+### [JS Scraping](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#js-scraping-1)
 - [ ] Linkfinder
 - [ ] SubDomainizer
 - [ ] Burp GAP Extension
@@ -43,14 +43,14 @@
 - [ ] JS Finder
 - [ ] Secret Finder
 
-- ### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis-1)
+### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis-1)
 - [ ] nuclei
 - [ ] retirejs
 - [ ] opengrep
 - [ ] metasec.js
 - [ ] Burpsuite Active Scan
 
-- ### [Manual Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#manual-analysis-1)
+### [Manual Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#manual-analysis-1)
 - [ ] Manual Crawling 
 - [ ] Questions
 - [ ] Modules and Submodules
