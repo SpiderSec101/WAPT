@@ -157,12 +157,12 @@
 
 
 ### wafw00f
-    * It helps to fingerprint the firewalls
+ - It helps to fingerprint the firewalls
 
             wafw00f https://target.com
 
 ### httrack
-    * It helps to clone the wep application to the local machine
+  - It helps to clone the wep application to the local machine
 
             httrack https://target.com
 
