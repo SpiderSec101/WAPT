@@ -10,7 +10,7 @@
 
 ### [Wordlists](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wordlists-1)
 
-### Tech Profiling
+### [Tech Profiling](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#wafw00f)
 - [ ] Wappalyzer
 - [ ] Builtwith
 - [ ] Whatruns
