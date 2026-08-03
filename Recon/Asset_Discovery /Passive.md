@@ -59,6 +59,10 @@
 - [ ] [Eyewitness](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#eyewitness)
 - [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
+### Wayback Archive Endpoints
+- [ ] waymore
+- [ ] xnLinkFinder
+
 ### TLDs 
 - [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
 - [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
@@ -315,7 +319,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
 - #### resolvers.txt
 
-[https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt](https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt)
+  - [https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt](https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt)
 
    * resolvers.txt is a file that contains a list of DNS resolvers (i.e., DNS servers) that different tools will use to perform DNS lookups. Each line in the file represents the IP address of a DNS resolver
 
@@ -360,6 +364,27 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
 - #### Aquatone
   [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone)
+
+- ####  waymore
+    
+  [https://github.com/xnl-h4ck3r/waymore](https://github.com/xnl-h4ck3r/waymore)
+
+    ```bash
+    pip install waymore
+    ```
+    
+    ```bash
+    waymore -i target.com -mode U -c /path/to/config.yml -oU waymore_urls.txt
+    ```
+
+- #### xnLInkFinder
+    
+    - [https://github.com/xnl-h4ck3r/xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder)
+
+
+    ```bash
+    python3 xnLinkFinder.py -i ~/directory/to/xml/files -sp https://www.target.com -sf target.com -o output.txt
+    ```
 
 - #### TLD
      * Google Dorks
