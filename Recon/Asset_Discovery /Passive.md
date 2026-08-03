@@ -64,9 +64,11 @@
 - [ ] [waymore](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#waymore)
 - [ ] [xnLinkFinder](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#xnlinkfinder)
 
-### Secrets
+### User Info / Secrets
 - [ ] [theHarvester](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#theharvester)
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [github-secrets](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
+- [ ] [git-history](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [trufflehog](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#trufflehog)
 
 ### TLDs 
@@ -311,6 +313,14 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
           subfinder -d target.com -all -o output.txt
 
+- #### theHarvester
+  [https://github.com/laramies/theHarvester](https://github.com/laramies/theHarvester)  
+    * The tool helps to extract Subdomains, Employee Emails, ASN, IPv4 Addresses
+       
+ 
+          theharvester -d <domain> -b all
+      
+      
 - #### resolvers.txt
 
   - [https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt](https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt)
@@ -380,6 +390,13 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
     python3 xnLinkFinder.py -i ~/directory/to/xml/files -sp https://www.target.com -sf target.com -o output.txt
     ```
 
+- #### trufflehog
+  [https://github.com/trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog)
+    * Scan a GitHub Repo for only verified secrets
+
+          trufflehog git https://github.com/company_name/repo_name --results=verified 
+
+
 - #### TLD
      * Google Dorks
 
@@ -387,18 +404,6 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
      * Censys
 
            company_name
-
-- #### theHarvester
-  [https://github.com/laramies/theHarvester](https://github.com/laramies/theHarvester)  
-    * This command queries all available data sources to gather maximum information about the target domain. It provides comprehensive OSINT coverage.
- 
-          theharvester -d <domain> -b all
-
-- #### trufflehog
-  [https://github.com/trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog)
-    * Scan a GitHub Repo for only verified secrets
-
-          trufflehog git https://github.com/company_name/repo_name --results=verified 
 
 
 - #### whoxy
