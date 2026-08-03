@@ -63,22 +63,15 @@
 - [ ] waymore
 - [ ] xnLinkFinder
 
-### TLDs 
-- [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
-- [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
-- [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
-
 ### Secrets
 - [ ] [theHarvester](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#theharvester)
 - [ ] [github-employees](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#github-enumeration-1)
 - [ ] [trufflehog](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#trufflehog)
 
-### Tech Profiling
-- [ ] Wappalyzer
-- [ ] Builtwith
-- [ ] Whatruns
-- [ ] [WAF](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#wafw00f)
-- [ ] [Cloning](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#httrack)
+### TLDs 
+- [ ] [Google Dorking](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
+- [ ] [Censys](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#tld)
+- [ ] BuiltWith: [https://builtwith.com](https://builtwith.com)
 
 ### Dorking
 - [ ] [Google](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#google-dorks)
@@ -406,16 +399,6 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
           trufflehog git https://github.com/company_name/repo_name --results=verified 
 
-
-- #### wafw00f
-    * It helps to fingerprint the firewalls
-
-            wafw00f https://target.com
-
-- #### httrack
-    * It helps to clone the wep application to the local machine
-
-            httrack https://target.com
 
 - #### whoxy
 [whoxy.com](https://www.whoxy.com/)
