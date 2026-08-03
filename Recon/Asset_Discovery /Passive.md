@@ -3,7 +3,7 @@
 * Here I have made a list which helps me in passive recon.
 * I have metioned what we want to extract and different processes and tool to do so.
 
-### Acquisitions
+### Acquisitions <br>
 - [ ] Crunchbase - [Link](https://www.crunchbase.com/)
 ## ASN (Autonomous System Numbers)
 It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
