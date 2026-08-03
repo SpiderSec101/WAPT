@@ -5,6 +5,6 @@ I have created this repository to provide a structured approach to my web applic
 ---
 
 * ### [Recon](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Recon)
-* ### [Pentesting Flow](https://github.com/SpiderSec101/WAPT/tree/main/pentesting_flow)
+* ### [Pentesting Flow](https://github.com/SpiderSec101/WAPT/tree/main/Pentesting_Flow)
 * ### [Report Writing](https://github.com/SpiderSec101/WAPT/tree/main/Report)
 * ### [Tools](https://github.com/SpiderSec101/WAPT/tree/main/Tools)
