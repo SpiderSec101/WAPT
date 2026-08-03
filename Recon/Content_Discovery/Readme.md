@@ -47,16 +47,24 @@
 - [ ] Secret Finder
 
 ### [Automated Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#automated-analysis-1)
+
+- [ ] Burpsuite Active Scan
+      - Scan a target
+      - Scan a request
+      - Scan a parameter
 - [ ] nuclei
 - [ ] retirejs
 - [ ] opengrep
 - [ ] metasec.js
-- [ ] Burpsuite Active Scan
+- [ ] Semgrep
+- [ ] CodeQL
+- [ ] AI Agents
 
 ### [Manual Analysis](https://github.com/SpiderSec101/WAPT/tree/main/Recon/Content_Discovery#manual-analysis-1)
-- [ ] Manual Crawling 
+- [ ] Manual Crawling : Sitemap
 - [ ] Questions
 - [ ] Modules and Submodules
+- [ ] HTTP Requests and Responses
 - [ ] [WAPT-Testcases](https://github.com/SpiderSec101/WAPT/raw/refs/heads/main/Test%20Cases/WAPT-Testcases.xlsx)
 
 --- 
@@ -390,11 +398,6 @@
 - [ ] metasec.js
 
     - [https://github.com/LewisArdern/metasecjs](https://github.com/LewisArdern/metasecjs)
-
-- [ ] Burpsuite Active Scan
-    - Scan a target
-    - Scan a request
-    - Scan a parameter
      
 
 
