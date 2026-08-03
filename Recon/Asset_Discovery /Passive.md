@@ -407,49 +407,49 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
 
 - #### whoxy
-[whoxy.com](https://www.whoxy.com/)
-
-    https://api.whoxy.com/?key=<your_api_key_here>&reverse=whois&keyword=<company_name_here>&mode=domains
+    [whoxy.com](https://www.whoxy.com/)
+      
+          https://api.whoxy.com/?key=<your_api_key_here>&reverse=whois&keyword=<company_name_here>&mode=domains
 
 - #### SubreconGPT
     * First install the chaos-client from here [https://github.com/projectdiscovery/chaos-client](https://github.com/projectdiscovery/chaos-client)
     * Then download the python script from here [https://github.com/jhaddix/SubreconGPT](https://github.com/jhaddix/SubreconGPT)
 
-              pip install openai==0.28
-      
-              # Now get the chaos api key from https://chaos.projectdiscovery.io/
-              export PDCP_API_KEY="your_chaos_key_here"
-      
-              chaos -d example.com --key your_chaos_key_here | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
+          pip install openai==0.28
+          # Now get the chaos api key from https://chaos.projectdiscovery.io/
+          export PDCP_API_KEY="your_chaos_key_here"
+          chaos -d example.com --key your_chaos_key_here | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
 
 
 - #### Github Dorks
-[https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
+   [https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
 
-    bash Gdorklink.sh example.com 
+
+      bash Gdorklink.sh example.com 
 
 - #### Google Dorks
+
   
-| **Filter** | **Description** | **Example** |
-| --- | --- | --- |
-| intext | Searches for the occurrences of keywords all at once or one at a time. | `intext:"keyword"` |
-| inurl | Searches for a URL matching one of the keywords. | `inurl:"keyword"` |
-| allinurl | Searches for a URL matching all the keywords in the query. | `allinurl:"keyword"` |
-| intitle | Searches for occurrences of keywords in title all or one. | `intitle:"keyword"` |
-| allintitle | Searches for occurrences of keywords all at a time. | `allintitle:"keyword"` |
-| site | Specifically searches that particular site and lists all the results for that site. | `site:"www.google.com"` |
-| filetype | Searches for a particular filetype mentioned in the query. | `filetype:"pdf"` |
-| cache | Shows the version of the web page that Google has in its cache. | `cache:www.google.com` |
+     | **Filter** | **Description** | **Example** |
+     | --- | --- | --- |
+     | intext | Searches for the occurrences of keywords all at once or one at a time. | `intext:"keyword"` |
+     | inurl | Searches for a URL matching one of the keywords. | `inurl:"keyword"` |
+     | allinurl | Searches for a URL matching all the keywords in the query. | `allinurl:"keyword"` |
+     | intitle | Searches for occurrences of keywords in title all or one. | `intitle:"keyword"` |
+     | allintitle | Searches for occurrences of keywords all at a time. | `allintitle:"keyword"` |
+     | site | Specifically searches that particular site and lists all the results for that site. | `site:"www.google.com"` |
+     | filetype | Searches for a particular filetype mentioned in the query. | `filetype:"pdf"` |
+     | cache | Shows the version of the web page that Google has in its cache. | `cache:www.google.com` |
 
-
-      site: target.com filetype: env
-    
-      site:target.com intext:password intext:username intext:secret
       
-      site: target.com inurl: credentials inurl: password
-
-      site:example[.]com ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess | ext:json
-
+            site: target.com filetype: env
+          
+            site:target.com intext:password intext:username intext:secret
+            
+            site: target.com inurl: credentials inurl: password
+      
+            site:example[.]com ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess | ext:json
+      
 
     
 
