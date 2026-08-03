@@ -60,8 +60,8 @@
 - [ ] [Aquatone](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#aquatone)
 
 ### Wayback Archive Endpoints
-- [ ] waymore
-- [ ] xnLinkFinder
+- [ ] [waymore](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#waymore)
+- [ ] [xnLinkFinder](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#xnlinkfinder)
 
 ### Secrets
 - [ ] [theHarvester](https://github.com/SpiderSec101/WAPT/blob/main/Recon/Asset_Discovery%20/Passive.md#theharvester)
