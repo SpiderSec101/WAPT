@@ -165,6 +165,11 @@
 - [ ] Parameters
   - SecLists
   - [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
+- [ ] Custom Wordlist
+  - Cewl
+    [https://www.kali.org/tools/cewl/](https://www.kali.org/tools/cewl/)
+  - Burp Gap
+    [https://github.com/xnl-h4ck3r/GAP-Burp-Extension](https://github.com/xnl-h4ck3r/GAP-Burp-Extension)
 
 
 
