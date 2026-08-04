@@ -156,7 +156,7 @@
   - SecLists
   - [fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 - [ ] Fuzzing
-  - Paloadallthethings Intruder
+  - Paloadallthethings-Intruder-Wordlists
   - SecLists
 - [ ] API Resources
   - SecLists
